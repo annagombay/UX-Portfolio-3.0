@@ -1,0 +1,404 @@
+<!-- project-details.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+      <!-- UDP Gothic / Corben / Roboto / Cedarville -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  </head>
+  
+  <body onload="typeText()" id="bkg">
+
+    <header>
+      <nav>
+        <h1 id="typing-animation" alt="Hi, I'm Anna"></h1>
+      </nav>
+      <div class="socialLinks">
+        <img onclick="openEmail()" class="socialLink" src="./images/email.webp">
+        <img onclick="openGithub()" class="socialLink" src="./images/github.webp">
+        <img onclick="openLinkedIn()"class="socialLink" src="./images/linked-in.webp">
+      </div>
+    </header>
+
+    <div class="caseStudy">
+
+      <div class="buttonWrapper" id="web">
+        <button id="left" onclick="goHome()">HOME</button>
+        <button id="right" onclick="openDetailsPage(2)">NEXT</button>
+      </div>
+
+      <div class="buttonWrapper" id="mob">
+        <img id="left" src="./images/back-button.webp" onclick="goHome()">
+        <img id="right" src="./images/forward-button.webp" onclick="openDetailsPage(2)">
+      </div>
+
+      <section>
+        <div class="topBkg"></div>
+        <div class="row">
+          <h1>
+            OK NOT OK
+          </h1>     
+        </div>
+        <div class="row">
+          <h2> 
+            Mind your medication
+          </h2> 
+        </div>  
+      </section>
+
+      <section>
+        <div class="row">
+            <div class="hero">
+              <div class="col">
+                <div class="center">
+                  <img class="mockup4" src="./images/mockup4.webp" alt="mockup4" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="center">
+                  <img class="mockup1" src="./images/mockup1.webp" alt="mockup1" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="center">
+                  <img class="mockup2" src="./images/mockup2.webp" alt="mockup2"/>
+                </div>  
+              </div>
+              <div class="col">
+                <div class="center">
+                  <img class="mockup3" src="./images/mockup3.webp" alt="mockup3" />         
+                </div>        
+              </div>
+            </div> 
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="squeeze">
+            <div class="square">
+              <h2> 
+                Brief 
+              </h2>
+              <p> 
+                A mobile app to measure the relationship between psychiatric medication use and mood
+              </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Goal 
+              </h2>
+              <p> 
+                To reduce risk of harm and support the mental health of psychiatric medication users
+              </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Roles 
+              </h2>
+              <p>
+                UX Researcher
+                <br>
+                UX Designer
+                <br>
+                ReactJS Developer 
+              </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Tools 
+              </h2>
+              <p>
+                Figma
+                <br>
+                Visual Studio Code 
+              </p>
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">  
+                <h2>
+                  THE PROBLEM
+                </h2>
+                <h3> 
+                  The impact of psychiatric medication on the human brain is inadequately measured and narrowly understood.
+                </h3>
+                <p>
+                  The system used to diagnose mental health disorders is rooted in observational research that has yet to be biologically validated despite over 60 years of research.<sup onClick="() => openInNewTab('https://rdcu.be/cWCZC')">1,</sup><sup onClick="() => openInNewTab('https://www.nature.com/articles/s41398-020-0835-5.pdf')">2,</sup><sup onClick="() => openInNewTab('https://www.goodreads.com/book/show/40180010-mind-fixers')">3</sup>
+                </p>
+                <p> 
+                  In 2013, Tom Insel – Director of <span onClick="() => openInNewTab('https://www.nimh.nih.gov/')">NIMH</span>, the largest mental health research organization in the world – urged that "we cannot design a system based on biomarkers or cognitive performance because we lack the data".<sup onClick="() => openInNewTab('http://psychrights.org/2013/130429NIMHTransformingDiagnosis.htm')">4</sup>
+                </p>
+                <p>
+                  It's 2023; Tom Insel left NIMH for Google<sup onClick="() => openInNewTab('https://www.apa.org/monitor/2016/01/personalities-google')">5</sup>, and psychiatrists are still using the same "gold standard" system to determine medical interventions for those deemed mentally ill.
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <img class="imgWrapper" src="./images/shrink-tank.webp" alt="shrink-tank"/>
+          </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">  
+                <h2>
+                  DESIGNING A SOLUTION
+                </h2>
+                <h3> 
+                  Talking to psychiatric medication users
+                </h3>
+                <p>
+                  I engaged in five one-on-one interviews with people who had taken psychiatric medication daily for at least 6 months.
+                </p>
+                <p> 
+                  Conversations revolved around mood, symptoms, and self-reported experiences of medication use.
+                </p>
+                <p>
+                  My goal here was to form a general understanding of what daily life feels like for people who take psychiatric medication. 
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <img class="imgWrapper" src="./images/Interviews.webp" alt="interviews"/>
+          </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">  
+                <h3> 
+                  Considering wants and needs   
+                </h3>
+                <p>
+                  To identify themes in feedback, I collapsed my notes into clusters of wants, needs, pains, and opportunities.
+                </p>
+                <p> 
+                  I then created hypothetical personas who illustrate varying experiences people taking psychiatric medication might encounter. 
+                </p>
+                <p>
+                  These personas anchored my empathy throughout the design process by serving as vantage points from which I could anticipate medication users' needs. 
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <div class="imgWrapper">
+              <div class="personaWrapper">
+                <div class="persona">
+                  <p>
+                      "I want to know if my medication is impacting my mood day-to-day. Is it helping?" 
+                  </p>
+                  <div class="personaImg">
+                      <img src="./images/persona-1.webp" alt="persona-1"/>
+                  </div>
+                </div>
+                <div class="persona">
+                  <p>
+                      "I feel isolated in my environment. I want to connect with people who face mental health challenges similar to my own."  
+                  </p>
+                  <div class="personaImg">
+                      <img src="./images/persona-2.webp" alt="persona-2"/>
+                  </div>
+                </div>
+                <div class="persona">
+                  <p>
+                      "I need to undestand my diagnosis better. Are there alternatives to medication that could help me?"
+                  </p>
+                  <div class="personaImg">
+                      <img src="./images/persona-3.webp" alt="persona-3"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Mapping out problems and solutions   
+              </h3>
+              <p>
+                To broaden the scope from which I could brainstorm design themes, I created an exhaustive list of user-relevant problems, ideas, quotes, emotions, thoughts, and potential solutions.
+              </p>
+            </div>
+          </div>
+        </div>  
+        <div class="cardR">
+          <img class="imgWrapper" src="./images/affinity-map.webp" alt="affinity-map"/>
+        </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Analyzing competitors 
+              </h3>
+              <p>
+                To understand my competitive landscape, I analyzed existing mobile apps with goals similar to my own. 
+              </p>
+              <p>
+                The most significant drawback I identified was that all of my competitors categorized mood from "very good" to "very bad". This measure feels limited as it risks an implication that "high" moods are categorically good, and "low" moods are categorically bad. 
+              </p>
+              <p>
+                To encourage a perspective that moods are dynamic and all valuable for different reasons, I decided to include a second dimension in my own mood scale that would measure mood intensity.
+              </p>
+          </div>
+        </div>
+      </div>  
+      <div class="cardR">
+        <img class="imgWrapper" src="./images/competitive-analysis.webp" alt="competitive-analysis"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Sketching the prototype 
+              </h3>
+              <p>
+                The most important thing I recognized throughout my user research was that individuals taking psychiatric medication shouldn't be acknowledged purely based on prescriptions of illness. 
+              </p>
+              <p>
+                It felt crucial to promote a whole-person approach to mental health support– to recognize peripheral needs such as those related to interpersonal relationships, or therapy. 
+              </p>
+              <p>
+                To this end, in addition to providing data surrounding the impact (or lack thereof) of medication on daily well-being, I decided to build an online chat forum for people to connect about mental health, as well as a knowledge base to support psycho-education. 
+              </p>
+            </div>
+          </div>
+        </div>  
+      <div class="cardR">
+        <img class="imgWrapper" src="./images/sketches.webp" alt="sketches"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Digitizing the design                             
+              </h3>
+              <p>
+                Iterating from my sketches, I digitized my design and assembled a comprehensive list of features and functions that would be necessary to implement into my code.
+              </p>
+            </div>
+          </div>
+        </div>  
+        <div class="cardR">
+          <img class="imgWrapper" src="./images/lo-fi.webp" alt="lo-fi"/>
+        </div>
+    </section>
+    
+    <section>
+      <div class="row">
+        <div class="card3">
+            <div class="center">
+              <div class="header">
+                <h2>
+                  THE FINAL PRODUCT
+                </h2>
+                <h3>
+                  An app that allows users to dynamically measure medication use and mood... 
+                </h3>
+              </div>
+              <br>
+              <img class="feature" alt="feature-1" src="./images/feature-1.webp"/>
+              <div class="header">
+                <br>
+                <h3>
+                  ...connect anonymously with a safe community...
+                </h3>
+              </div>
+              <br>
+              <img class="feature" alt="feature-2" src="./images/feature-2.webp"/>
+              <div class="header">
+                <br>
+                <h3>
+                  ...and access educational content on mental health.
+                </h3>
+              </div>
+              <br>
+              <img  class="feature" alt="feature-3" src="./images/feature-3.webp"/>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+    
+    <section>
+      <div class="row">
+        <div class="briefBkg">
+            <div class="bottom">
+              <h2>
+                NEXT STEPS   
+              </h2>
+              <p>
+                I'm currently in the process of developing OK NOT OK using a ReactJS framework.
+              </p>
+              <p>
+                If you are interested in becoming a beta user or learning more about the project, please contact 
+                <a href="mailto:OKNOTOKapp@gmail.com">
+                  OKNOTOKapp@gmail.com
+                </a>
+              </p>
+              <p>
+                Be well!
+                <br>
+                Anna Gombay
+              </p>
+              <img class="signature" src="./images/signature.webp" alt='signature'/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <footer onload="getCurrentYear()"> © <span id="currentYear"></span> Anna Gombay | All rights reserved</footer>
+    </section>
+
+    <script>
+      // Get current year
+      function getCurrentYear() {
+        const currentDate = new Date();
+        return currentDate.getFullYear();
+      }
+    
+      // Update the current year in the footer
+      const currentYear = getCurrentYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    </script>
+
+  </body>
+</html>

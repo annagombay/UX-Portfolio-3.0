@@ -1,0 +1,331 @@
+<!-- project-details.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+      <!-- UDP Gothic / Corben / Roboto / Cedarville -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  </head>
+  
+  <body onload="typeText()" id="bkg">
+
+    <header>
+      <nav>
+        <h1 id="typing-animation" alt="Hi, I'm Anna"></h1>
+      </nav>
+      <div class="socialLinks">
+        <img onclick="openEmail()" class="socialLink" src="./images/email.webp">
+        <img onclick="openGithub()" class="socialLink" src="./images/github.webp">
+        <img onclick="openLinkedIn()"class="socialLink" src="./images/linked-in.webp">
+      </div>
+    </header>
+
+    <div class="caseStudy">
+
+      <div class="buttonWrapper" id="web">
+        <button id="left" onclick="openDetailsPage(2)">BACK</button>
+        <button id="right" onclick="goHome()">HOME</button>
+      </div>
+
+      <div class="buttonWrapper" id="mob">
+        <img id="left" src="./images/back-button.webp" onclick="openDetailsPage(2)">
+        <img id="right" src="./images/forward-button.webp" onclick="goHome()">
+      </div>
+
+      <section>
+        <div class="topBkg"></div>
+        <div class="row">
+          <h1> 
+            EAT SLEEP RIDE 
+          </h1>     
+        </div>
+        <div class="row">
+          <h2> 
+            Twist and go
+          </h2> 
+        </div>  
+      </section>
+
+      <section>
+        <div class="row">
+            <div class="hero">
+              <div class="col">
+                <div class="center">
+                  <img  class="esrImage" src="./images/esr-hero.webp" alt="esr-hero" />
+                </div>
+              </div>
+            </div> 
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="squeeze">
+            <div class="square">
+              <h2> 
+                Brief 
+              </h2>
+              <p> 
+                A modernized website for a motorcycle company
+              </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Goal 
+              </h2>
+              <p> 
+                To design a promotional website for a motorcycle riding app
+              </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Roles 
+              </h2>
+              <p>
+                UX Researcher
+                <br>
+                UX Designer*
+                <br>
+                UX Writer*
+                <br>
+                <br>
+                <sup id="black">*Assisted by Sophia Tran</sup>
+              </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Tools 
+              </h2>
+              <p>
+                Figma
+                <br>
+                Groove HQ
+              </p>
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">  
+                <h2>
+                  THE PROBLEM
+                </h2>
+                <h3> 
+                  ESR's website lacked user-centricity 
+                </h3>
+                <p>
+                  Over the course of several years, ESR and their user base had evolved but their promotional website hadn't. 
+                </p>
+                <p> 
+                  The existing design did not capitalize on ESR's most valuable offerings and risked being out of sync with their contemporary users' interests. 
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <img class="imgWrapper" src="./images/esr-intro.webp" alt="esr-intro"/>
+          </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">  
+                <h2>
+                  DESIGNING A SOLUTION
+                </h2>
+                <h3> 
+                  Gathering user insights
+                </h3>
+                <p>
+                  With a limited research budget, I needed a creative way to learn about the current users' needs and pain points. 
+                </p>
+                <p>
+                  As such, I scoured through hundreds of recent user emails and synthesized their discourse into broad themes. I validated my research through consultations with the company's CEO and my senior colleagues. 
+                </p>
+                <p>
+                  Safety, community, and competition were the most salient themes I extracted, and they became the foundation of my design approach as I aimed to enhance the user-centricity of the website. 
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <img class="imgWrapper" src="./images/esr-groove.webp" alt="esr-groove"/>
+          </div>
+      </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Emphasizing safety 
+              </h3>
+              <p>
+                To address safety, I promoted the app's selling feature: <span id="bold">CRASHLIGHT</span>.
+              </p>
+              <p>
+                CRASHLIGHT is a safety feature developed by ESR that automatically detects motorcycle crashes and notifies up to three contacts with the rider's exact location via SMS (text) message, automated phone call, and email.
+              </p>
+              <p>
+                I devoted a full web-page using a high contrast background colour to bring attention to this feature. I also incorporated two hyperlinks and included a design element advertising CRASHLIGHT's 30-day free trial to encourage users to learn more about the offering. 
+              </p>
+          </div>
+        </div>
+      </div>  
+      <div class="cardR">
+        <img class="imgWrapperWide" src="./images/esr-5-nobkg.webp" alt="esr-5-nobkg"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Fostering community
+              </h3>
+              <p>
+                To foster a sense of community, I emphasized the crowdsourced nature and global reach of the app.
+              </p>
+              <p>
+                
+                I included real posts from the app to give users a sense of the conversations happening... and superimposed over a world map displaying datapoints for the company's users... I emphasized the ability to meet like minded people. 
+                
+                designed features that encouraged social interaction and collaboration among users. This involved implementing user profiles, a messaging system, and discussion forums where users could connect, share experiences, and seek support from like-minded individuals. By facilitating these connections, we created a vibrant and supportive community within the website, 
+                
+                enhance the view of user engagement and satisfaction.
+              </p>
+          </div>
+        </div>
+      </div>  
+      <div class="cardR">
+        <img class="imgWrapperWide" src="./images/esr-8.webp" alt="esr-8"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Encouraging competition
+              </h3>
+              <p>
+                Understanding the competitive aspect desired by the user base, I incorporated elements that promoted healthy competition and achievement. This included ... a frame about leaderboards and monthly prizes... 
+
+                leaderboards, challenges, and achievement badges that allowed users to showcase their progress and compare themselves with others. By tapping into users' competitive drive, we created a dynamic and motivating environment that encouraged them to push their limits and strive for excellence.
+              </p>
+          </div>
+        </div>
+      </div>  
+      <div class="cardR">
+        <img class="imgWrapperWide" src="./images/esr-4-nobkg.webp" alt="esr-4-nobkg"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="card3">
+            <div class="center">
+              <div class="header">
+                <h2>
+                  THE FINAL PRODUCT
+                </h2>
+              </div>
+              <img class="esrFeature" alt="esr-1" src="./images/esr-1.webp"/>
+              <img class="esrFeature" alt="esr-2" src="./images/esr-2.webp"/>
+              <img class="esrFeature" alt="esr-3" src="./images/esr-3.webp"/>
+              <img class="esrFeature" alt="esr-4" src="./images/esr-4.webp"/>
+              <img class="esrFeature" alt="esr-5" src="./images/esr-5.webp"/>
+              <img class="esrFeature" alt="esr-6" src="./images/esr-6.webp"/>
+              <img class="esrFeature" alt="esr-7" src="./images/esr-7.webp"/>
+              <img class="esrFeature" alt="esr-8" src="./images/esr-8.webp"/>
+              <img class="esrFeature" alt="esr-9" src="./images/esr-9.webp"/>
+              <img class="esrFeature" alt="esr-10" src="./images/esr-10.webp"/>
+              <img class="esrFeature" alt="esr-11" src="./images/esr-11.webp"/>
+              <img class="esrFeature" alt="esr-12" src="./images/esr-12.webp"/>
+              <img class="esrFeature" alt="esr-13" src="./images/esr-13.webp"/>
+              <img class="esrFeature" alt="esr-14" src="./images/esr-14.webp"/>
+              <img class="esrFeature" alt="esr-15" src="./images/esr-15.webp"/>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+    
+    <section>
+      <div class="row">
+        <div class="briefBkg">
+            <div class="bottom">
+              <h2>
+                THANK YOU  
+              </h2>
+              <p>
+                If you are interested in collaborating please contact me at
+                <a href="mailto:annaphoenixg@gmail.com">
+                annaphoenixg@gmail.com
+                </a>
+              </p>
+              <p>
+                Be well!
+                <br>
+                Anna Gombay
+              </p>
+              <img class="signature" src="./images/signature.webp" alt='signature'/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <footer onload="getCurrentYear()"> © <span id="currentYear"></span> Anna Gombay | All rights reserved</footer>
+    </section>
+
+    <script>
+      // Get current year
+      function getCurrentYear() {
+        const currentDate = new Date();
+        return currentDate.getFullYear();
+      }
+    
+      // Update the current year in the footer
+      const currentYear = getCurrentYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    </script>
+    
+    
+  </body>
+</html>
+
+<!-- "While designing the website, I took into consideration the valuable insights provided by the CEO regarding the user base's preferences for safety, community, and competition. These three aspects became the foundation of my design approach, aiming to create a platform that not only addressed the users' needs but also resonated with their desires for a secure, connected, and engaging experience.
+
+To address the need for safety, I promoted the app's selling feature: Crashlight.  
+
+
+robust security measures throughout the website. This included encryption protocols, user authentication processes, and strict data privacy policies. By prioritizing user safety, we instilled confidence in the community, ensuring their personal information and interactions within the platform were protected.
+
+To foster a sense of community, I ... emphasized the crowdsourced nature and global reach of the app... 
+
+
+designed features that encouraged social interaction and collaboration among users. This involved implementing user profiles, a messaging system, and discussion forums where users could connect, share experiences, and seek support from like-minded individuals. By facilitating these connections, we created a vibrant and supportive community within the website, enhancing user engagement and satisfaction.
+
+Understanding the competitive aspect desired by the user base, I incorporated elements that promoted healthy competition and achievement. This included ... a frame about leaderboards and monthly prizes... 
+
+leaderboards, challenges, and achievement badges that allowed users to showcase their progress and compare themselves with others. By tapping into users' competitive drive, we created a dynamic and motivating environment that encouraged them to push their limits and strive for excellence.
+
+By incorporating safety, community, and competition into the website's design, I aimed to provide a holistic experience that not only met the users' needs but also exceeded their expectations. The resulting platform offered a secure and supportive space where users could connect, grow, and thrive within a competitive framework, fostering a sense of belonging and accomplishment." -->

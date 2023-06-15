@@ -1,0 +1,91 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    
+    <!-- UDP Gothic / Corben / Roboto / Cedarville -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+  </head>
+  
+  <body onload="typeText()">
+    <header>
+      <nav>
+        <h1 id="typing-animation" alt="Hi, I'm Anna"></h1>
+      </nav>
+      <div class="socialLinks">
+        <img onclick="openEmail()" class="socialLink" src="./images/email.webp">
+        <img onclick="openGithub()" class="socialLink" src="./images/github.webp">
+        <img onclick="openLinkedIn()"class="socialLink" src="./images/linked-in.webp">
+      </div>
+    </header>
+
+    <div class="landingPage">
+      <div class="landingContent">
+          <h1 id="black">I am a</h1>
+            <br id="no-show">
+            <br>
+          <h1>UX Designer</h1>
+            <br>
+
+          <h1 id="black">building bridges between</h1>
+            <br id="no-show">
+          <h1 id="black">people and products</h1>
+          <button class="seeProjectsBtn" onclick="scrollToProjects()">See Projects</button>
+      </div>
+      <div class="landingImage">
+        <img id="hero-img" src="./images/landing-image.png" alt="hero-img">
+        <img id="hero-img-mob" src="./images/hero-bkg-mob.webp" alt="I am a UX Designer building bridges between people and products">
+      </div>
+    </div>
+
+    <main id="projects" role="main">
+      <section class="projectSection">
+        <div class="project" id="extra-margin">
+          <h2>OK NOT OK</h2>
+          <h3>A mobile app to measure the relationship between medication and mood</h3>
+          <img src="./images/ono-project.png" alt="ono-project">
+          <button onclick="openDetailsPage(1)">View Project</button>
+        </div>
+        <div class="project">
+          <h2>CHATRBOT</h2>
+          <h3>A spoken word journal to challenge unhelpful self-talk</h3>
+          <img src="./images/cb-project.webp" alt="cb-project">
+          <button onclick="openDetailsPage(2)">View Project</button>
+        </div>
+        <div class="project">
+          <h2>EAT SLEEP RIDE</h2>
+          <h3>A modernized website for a motorcycle company</h3>
+          <img src="./images/esr-project.webp" alt="esr-project">
+          <button onclick="openDetailsPage(3)">View Project</button>
+        </div>
+      </section>
+
+      <section>
+        <footer onload="getCurrentYear()"> © <span id="currentYear"></span> Anna Gombay | All rights reserved</footer>
+      </section>
+
+      <script>
+        // Get current year
+        function getCurrentYear() {
+          const currentDate = new Date();
+          return currentDate.getFullYear();
+        }
+      
+        // Update the current year in the footer
+        const currentYear = getCurrentYear();
+        document.getElementById("currentYear").textContent = currentYear;
+      </script>
+      
+    </main>
+    
+  </body>
+</html>

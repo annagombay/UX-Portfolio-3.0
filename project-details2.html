@@ -1,0 +1,431 @@
+<!-- project-details.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+      <!-- UDP Gothic / Corben / Roboto / Cedarville -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  </head>
+  
+  <body onload="typeText()" id="bkg">
+
+    <header>
+      <nav>
+        <h1 id="typing-animation" alt="Hi, I'm Anna"></h1>
+      </nav>
+      <div class="socialLinks">
+        <img onclick="openEmail()" class="socialLink" src="./images/email.webp">
+        <img onclick="openGithub()" class="socialLink" src="./images/github.webp">
+        <img onclick="openLinkedIn()"class="socialLink" src="./images/linked-in.webp">
+      </div>
+    </header>
+
+    <div class="caseStudy">
+
+      <div class="buttonWrapper" id="web">
+        <button id="left" onclick="openDetailsPage(1)">BACK</button>
+        <button id="right" onclick="openDetailsPage(3)">NEXT</button>
+      </div>
+
+      <div class="buttonWrapper" id="mob">
+        <img id="left" src="./images/back-button.webp" onclick="openDetailsPage(1)">
+        <img id="right" src="./images/forward-button.webp" onclick="openDetailsPage(3)">
+      </div>
+
+      <section>
+        <div class="topBkg"></div>
+        <div class="row">
+          <h1> 
+            CHATRBOT 
+          </h1>     
+        </div>
+        <div class="row">
+          <h2> 
+            Make space for yourself 
+          </h2> 
+        </div>  
+      </section>
+
+      <section>
+        <div class="row">
+            <div class="hero">
+              <div class="col">
+                <div class="center">
+                  <img  class="cbImage" src="./images/cb-hero.webp" alt="cb-hero" />
+                </div>
+              </div>
+            </div> 
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="squeeze">
+            <div class="square">
+              <h2> 
+                Brief 
+              </h2>
+              <p> 
+                A spoken word journal to challenge unhelpful self-talk
+              </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Goal 
+              </h2>
+              <p> 
+                To provide emotional catharsis and enable users to make sense of their emotional experiences over time
+              </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Roles 
+              </h2>
+              <p>
+                UX Researcher
+                <br>
+                UX Designer
+              </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Tools 
+              </h2>
+              <p>
+                Figma
+                <br>
+                Amazon Mechanical Turk
+              </p>
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">  
+                <h2>
+                  THE PROBLEM
+                </h2>
+                <h3> 
+                  Our internal monologues run rampant and often remain unchallenged
+                </h3>
+                <p>
+                  People often accept their thoughts and beliefs at face value without considering whether they are accurate or helpful. 
+                </p>
+                <p> 
+                  Indiscriminate acceptance of habitual mental monologues can lead to harmful self-beliefs that erode confidence and hinder personal growth over time. 
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <img class="imgWrapper" src="./images/cb-intro.webp" alt="cb-intro"/>
+          </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">  
+                <h2>
+                  DESIGNING A SOLUTION
+                </h2>
+                <h3> 
+                  Understanding self-reflection
+                </h3>
+                <p>
+                  To learn about how people typically engage in self-reflection, I conducted interviews with individuals who kept written journals of their emotional experiences.
+                </p>
+                <p> 
+                  Conversations revolved around the perceived goals, motivations, and benefits of journaling, as well as pain points surrounding the habit.                 
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <img class="imgWrapper" src="./images/cb-interviews.webp" alt="cb-interviews"/>
+          </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">  
+                <h3> 
+                  Unpacking key findings
+                </h3>
+                <p>
+                  In general, people viewed journaling as an opportunity to capture thoughts in real time so that later, they could revisit their thoughts in different (and at times more enlightened) headspaces.
+                </p>
+                <p> 
+                  They reported valuing the ability to engage in free expression without fear of social judgment, and noted that identifying patterns in these authentic expressions helped them understand their view of the world and themselves better.                 
+                </p>
+                <p> 
+                  Some conveyed concern about their journals being read by others without their permission.                 
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <div class="imgWrapper">
+              <div class="personaWrapper">
+                <div class="persona">
+                  <p>
+                    "You can capture your mood in time… you can communicate something from a different time in a different headspace."  
+                  </p>
+                  <div class="personaImg">
+                      <img src="./images/cb-persona1.webp" alt="cb-persona1"/>
+                  </div>
+                </div>
+                <div class="persona">
+                  <p>
+                    "When were talking, we’re trying to follow rules… but when we’re talking in a journal, it’s free form and you can see patterns in language." 
+                  </p>
+                  <div class="personaImg">
+                      <img src="./images/cb-persona2.webp" alt="cb-persona2"/>
+                  </div>
+                </div>
+                <div class="persona">
+                  <p>
+                    "It’s about perspective... being able to see what I thought about the past... what I thought was important and what has changed since then."
+                  </p>
+                  <div class="personaImg">
+                      <img src="./images/cb-persona3.webp" alt="cb-persona3"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Connecting with experts
+              </h3>
+              <p>
+                I also interviewed two mental health therapists to learn about methods for enhancing self-awareness. 
+                <p>
+                  They emphasized the importance of identifying emotions, addressing their causes and consequences, and capturing thoughts in real time to assist users in recognizing and challenging harmful self-beliefs. 
+                </p>
+              <p>
+                Additionally, they spoke of guiding people through self-reflection by using structured prompts that promote balanced thinking and perspective-taking.
+              </p>
+          </div>
+        </div>
+      </div>  
+      <div class="cardR">
+        <img class="imgWrapper" src="./images/cb-experts.webp" alt="cb-experts"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Testing the concept
+              </h3>
+              <p> 
+               To test my concept, I administered a Mechanical Turk survey investigating the general public's interest in the concept of a spoken word journal. 
+              </p>
+              <p>
+                I also administered a Big-Five personality test to examine the types of personalities this concept would appeal to.    
+              </p>
+              <p>
+                The survey results indicated that <span id="bold">83% of respondents were “likely” or “very likely”</span> to use a spoken word journal, and those very likely to use the journal tended to rank<span id="bold"> high in neuroticism</span> (a tendency to experience anxiety, fear, and emotional instability). 
+              </p>
+          </div>
+        </div>
+      </div>  
+      <div class="cardR">
+        <img class="imgWrapper" src="./images/cb-concept.webp" alt="cb-concept"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Analyzing competitors 
+              </h3>
+              <p>
+                To assess my competitors, I evaluated five existing spoken word journal apps.
+              </p>
+              <p>
+                The majority of these apps did not have structured prompts to guide journal users, perhaps posing a risk to purposeful and productive self-reflection. 
+              </p>
+              <p>
+               They also tended to lack visual aesthetics reflective of comfort or safety, elements that should be considered important given the vulnerability required to speak openly and honestly on a mobile app. 
+              </p>
+          </div>
+        </div>
+      </div>  
+      <div class="cardR">
+        <img class="imgWrapper" src="./images/cb-comp-an.webp" alt="cb-comp-an"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Prioritizing ideas
+              </h3>
+              <p>
+               After completing my user research, I brainstormed ways of translating my users' needs into immersive journaling experiences.
+              </p> 
+              <p>
+                I decided it would be valuable to include multiple journal entry styles, each with distinct prompts.
+              </p>
+              <p>
+                I aimed to keep the user experience flexible enough to resonate with different moods at different points in time, but recognized the importance of not overwhelming users with options. 
+              </p>
+            </div>
+          </div>
+        </div>  
+        <div class="cardR">
+          <img class="imgWrapper" src="./images/cb-features.webp" alt="cb-features"/>
+        </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Crafting an atmosphere
+              </h3>
+              <p>
+                Because those most interested in the concept tended to be high in neuroticism, I wanted to provide an environment that felt like a safe escape—a place away from the world to comfortably divulge one's innermost thoughts.
+              </p>
+              <p>
+                I also wanted to capture my users' emphasis on the relativity of emotions to time.
+              </p> 
+              <p>
+                My needs aligned most closely with Retrofuturism, a design movement exploring tension between the past and future. This style combines nostalgic aesthetics with futuristic concepts, evoking a sense of balance between the known and the unknown.
+              </p>
+          </div>
+        </div>
+      </div>  
+      <div class="cardR">
+        <img class="imgWrapper" src="./images/cb-mood.webp" alt="cb-mood"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Designing a prototype 
+              </h3>
+              <p>
+                My final prototype offers four distinct entry styles:
+              </p>
+              <p>
+                <span id="bold">Thought Record: </span> Engage in a cognitive behavioural technique that helps you recognize and challenge distressing thoughts.
+              </p>
+              <p>
+                <span id="bold">Five Senses: </span> Take a mindful journey through space and time to reflect on your sensory experiences.
+              </p>
+              <p>
+                <span id="bold">Black Hole Letter: </span> Craft a letter you’ll never send and watch it fade into space. (Entry not archived)
+              </p>
+              <p>
+                <span id="bold">Freestyle: </span> Record your thoughts and feelings as a steady stream of consciousness.  No rules and no interruptions. 
+              </p>
+              <p>
+                Users' entries are transcribed and archived to facilitate self-reflection throughout evolving mindsets. A daily streak count keeps users motivated to continuously engage in introspection, and a lock screen ensures journal entries are kept private. 
+              </p>
+            </div>
+          </div>
+        </div>  
+      <div class="cardR">
+        <img class="imgWrapper" src="./images/cb-hifi.webp" alt="cb-hifi"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="card3">
+            <div class="center">
+              <div class="header">
+                <h2>
+                  THE FINAL PRODUCT
+                </h2>
+                <br>
+              </div>
+              <video controls>
+                <source src="./images/AlexaDiaryPromo.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+    
+    <section>
+      <div class="row">
+        <div class="briefBkg">
+            <div class="bottom">
+              <h2>
+                THANK YOU  
+              </h2>
+              <p>
+                If you are interested in collaborating please contact me at
+                <a href="mailto:annaphoenixg@gmail.com">
+                annaphoenixg@gmail.com
+                </a>
+              </p>
+              <p>
+                Be well!
+                <br>
+                Anna Gombay
+              </p>
+              <img class="signature" src="./images/signature.webp" alt='signature'/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <footer onload="getCurrentYear()"> © <span id="currentYear"></span> Anna Gombay | All rights reserved</footer>
+    </section>
+
+    <script>
+      // Get current year
+      function getCurrentYear() {
+        const currentDate = new Date();
+        return currentDate.getFullYear();
+      }
+    
+      // Update the current year in the footer
+      const currentYear = getCurrentYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    </script>
+    
+  </body>
+</html>
