@@ -77,3 +77,13 @@ function openLinkedIn() {
 function openGithub() {
   window.open('https://github.com/annagombay');
 }
+
+
+// Get current year
+function getCurrentYear() {
+  const currentDate = new Date();
+  return currentDate.getFullYear();
+}
+
+const currentYear = getCurrentYear();
+document.getElementById("currentYear").textContent = currentYear;
