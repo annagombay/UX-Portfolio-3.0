@@ -32,7 +32,6 @@ footer {
   background-size: cover;
   text-align: center;
   margin: 0 auto;
-  /* box-shadow: 0 .625vw 1.875vw rgba(76, 55, 208,.1); */
   border-top: .15vw solid #C2EDF4;
   position: fixed;
   bottom: 0;
@@ -59,6 +58,14 @@ nav {
   line-height: 4.5vw;
   color: black;
   margin-left: 2vw;
+}
+
+.hiddenButton {
+  width: 20vw;
+  height: 4.5vw;
+  z-index: 1000;
+  cursor: pointer;
+  background-position: center;
 }
 
 nav h1 {
@@ -104,7 +111,7 @@ nav h1 {
   cursor: pointer;
   padding: 1vw;
   text-transform: uppercase;
-  margin-top: 15vw;
+  margin-top: 17vw;
 }
 
 .landingPage {
@@ -120,10 +127,11 @@ nav h1 {
 .landingContent {
   width: 35%;
   margin-left: 3vw;
-  margin-top: 5.5vw;
+  margin-top: 3.5vw;
 }
 
 .landingContent h1 {
+  font-size: 2vw;
   margin: 0;
   text-align: left;
   font-family: 'BIZ UDPGothic', sans-serif;
@@ -400,7 +408,7 @@ sup {
   margin-top: 1vw;
   z-index: 6;
   border-radius: 2vw;
-  padding: 1vw;
+  padding: 2vw;
   overflow: hidden;
   border-radius: 2vw 0vw 0vw 2vw;
   border-left: .15vw solid #C2EDF4;
@@ -635,19 +643,6 @@ sup {
   margin-bottom: 0;
 }
 
-.SubTitle3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-family: 'BIZ UDGothic', sans-serif;
-  font-weight: 900;
-  font-size: 3vw;
-  letter-spacing: 0.003vw;
-  color: #4169E1;
-  padding-top: 2vw;
-  margin-left: 2vw;
-}
-
 .square p {
   display: inline;
   padding-top: 1vw;
@@ -766,19 +761,6 @@ a {
 
 }
 
-/* .nextSteps {
-  width: 100vw;
-  position: absolute;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  background-image: url(./images/nav-image.webp);
-  background-position: center;
-  background-size: cover;
-} */
-
-
 #front {
   position: relative;
   z-index: 9;
@@ -809,7 +791,6 @@ margin: 0 auto;
 #bold {
   font-weight: 900;
 }
-
 
 #typing-animation {
   font-family: 'Cedarville Cursive', cursive;
@@ -867,39 +848,18 @@ video {
     z-index:5;
     line-height: 17.196384vw;
   }
-
-  /* .socialLinks{
-    width: 100vw;
-    height: 4vw;
-    line-height: 4.5vw;
-    position: relative;
-    background-image: none;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -4.5vw;
-    margin-left: -2vw;
-  }
   
-  .socialLink{
-    cursor:pointer;
-    padding-left:.5vw;
-    position:relative;
-    top:50%;
-    -webkit-transform:translateY(-50%);
-    transform:translateY(-50%);
-    width:4vw;
-    height: 4vw;
-    z-index:5;
-    line-height: 4.5vw;
-  } */
-  
-
   nav {
     font-size: 5.248vw;
     letter-spacing: 0.0656vw;
     line-height: 17.196384vw;
     margin-left: 4vw;
   }
+  .hiddenButton {
+    width: 50vw;
+    height: 20vw;
+  }
+  
   .landingContent {
     width: 100vw;
     display: flex;
@@ -1092,7 +1052,7 @@ video {
     flex-direction: row;
     width: 90vw;
     margin-top: 1.5vw;
-    padding: 1.5vw;
+    padding: 2.5vw;
     border-radius: 4.5vw 4.5vw 0vw 0vw;
     border-left: .6vw solid #C2EDF4;
     border-top: .6vw solid #C2EDF4;
@@ -1102,7 +1062,7 @@ video {
   .cardR {
     width: 90vw;
     margin-top: -1vw;
-    padding: 1.5vw;
+    padding: 2.5vw;
     border-radius: 0vw 0vw 4.5vw 4.5vw;
     border-left: .6vw solid #C2EDF4;
     border-right: .6vw solid #C2EDF4;
@@ -1120,16 +1080,13 @@ video {
     padding-bottom: 3.2vw;
   }
 
-  /* .imgWrapperWide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 38vw;
+  .imgWrapperWide {
+    width: 90vw;
     height: fit-content;
     z-index: 1;
     padding-top: 2vw;
     padding-bottom: 2vw;
-  } */
+  }
   
   .header h2 {
     max-width: none;
