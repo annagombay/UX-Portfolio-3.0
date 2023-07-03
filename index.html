@@ -3,17 +3,15 @@
 <html>
   <head>
     <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    
-    <!-- UDP Gothic / Corben / Roboto / Cedarville -->
+    <!-- Font: UDP Gothic / Corben / Roboto / Cedarville -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Font: Cedarville -->
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
-
   </head>
   
   <body onload="typeText()">
@@ -28,42 +26,54 @@
       </div>
     </header>
 
-    <div class="landingPage">
+    <section class="landingPage">
       <div class="landingContent">
           <h1 id="black">I am a</h1>
             <br id="no-show">
             <br>
           <h1>UX Designer</h1>
+            <br id="no-show">
             <br>
-            <br id="no-show">
           <h1 id="black">building bridges between</h1>
-            <br id="no-show">
+            <br>
           <h1 id="black">people and products</h1>
           <button class="seeProjectsBtn" onclick="scrollToProjects()">See Projects</button>
       </div>
-      <div class="landingImage">
-        <img id="hero-img" src="./images/landing-image.png" alt="hero-img">
-        <img id="hero-img-mob" src="./images/hero-bkg-mob.webp" alt="I am a UX Designer building bridges between people and products">
+      <div class="heroImage">
+        <img id="hero-img" src="./images/hero-img.webp" alt="hero-img">
+        <img id="hero-img-mob" src="./images/hero-img-mob.webp" alt="hero-img-mob">
       </div>
-    </div>
+    </section>
 
     <main id="projects" role="main">
       <section class="projectSection">
-        <div class="project" id="extra-margin">
-          <h2>OK NOT OK</h2>
-          <h3>A mobile app to measure the relationship between medication and mood</h3>
+        <div class="project">
+          <div class="title">
+              <h2>OK NOT OK</h2>
+          </div>
+          <div class="subTitle">
+            <h3>A mobile app to measure the relationship between medication and mood</h3>
+          </div>
           <img src="./images/ono-project.png" alt="ono-project">
           <button onclick="openDetailsPage(1)">View Project</button>
         </div>
         <div class="project">
-          <h2>CHATRBOT</h2>
-          <h3>A spoken word journal to challenge unhelpful self-talk</h3>
+          <div class="title">
+            <h2>CHATRBOT</h2>
+          </div>
+          <div class="subTitle">
+            <h3>A spoken word journal to challenge unhelpful self-talk</h3>
+          </div>
           <img src="./images/cb-project.webp" alt="cb-project">
           <button onclick="openDetailsPage(2)">View Project</button>
         </div>
         <div class="project">
-          <h2>EAT SLEEP RIDE</h2>
-          <h3>Increasing the user-centricity of a website for motorcyclists</h3>
+          <div class="title">
+            <h2>EAT SLEEP RIDE</h2>
+          </div>
+          <div class="subTitle">
+            <h3>A user-centric website redesign for motorcycling app</h3>
+          </div>
           <img src="./images/esr-project.webp" alt="esr-project">
           <button onclick="openDetailsPage(3)">View Project</button>
         </div>
