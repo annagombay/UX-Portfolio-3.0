@@ -1,0 +1,332 @@
+
+
+/* CSS rules for small screens */
+
+@media (max-width: 576px) {1166
+
+
+    footer {
+      padding-top: 1.64vw;
+      padding-bottom: 1.64vw;
+      font-size: 3.28vw;
+      letter-spacing: 0.128125vw;
+      line-height: 6.15vw;
+      border-top: 0.492vw solid #C2EDF4;
+    }
+  
+    nav {
+      font-size: 5.248vw;
+      letter-spacing: 0.0656vw;
+      line-height: 17.196384vw;
+      margin-left: 4vw;
+    }
+    .hiddenButton {
+      width: 50vw;
+      height: 20vw;
+    }
+    
+    .landingContent {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0vw;
+      margin-top: 8.8vw;
+    }
+    .landingImage {
+      width: 100vw;
+      position: absolute;
+    }
+    #hero-img-mob {
+      display: flex;
+    }
+    #hero-img {
+      display: none;
+    }
+    .landingContent h1 {
+      display: none;
+    }
+    #no-show {
+      display: none;
+    }
+    .seeProjectsBtn {
+      font-size: 3.5875vw;
+      letter-spacing: 0.3203125vw;
+      line-height: 5.38125vw;
+      border: 0.656vw solid #24AFC5;
+      border-radius: 2.624vw;
+      box-shadow: rgba(241, 106, 141, 0.2) 0px 22px 314.88px 295.2px 0px;
+      padding: 3.28vw;
+      margin-top: 8vw;
+      width: fit-content;
+      z-index: 99;
+      align-self: center;
+    }
+    #projects {
+      padding-top: 100vw;
+    }
+    #extra-margin {
+      margin-top: 125vw;
+    }
+    .projectSection {
+      flex-direction: column;
+      align-items: center;
+    }
+    .project {
+      width: 88.56vw; 
+      height: auto; 
+      box-shadow: 0.625vw 1.875vw rgba(76, 55, 208,.05);
+      padding-bottom: 6vw;
+      border-radius: 3vw;
+      border: .6vw solid #C2EDF4;
+      padding-bottom: 6.56vw;
+      border-radius: 3.28vw;
+      border: 0.656vw solid #C2EDF4;
+      padding-bottom: none;
+    }
+    .project h2 {
+      font-size: 5.248vw;
+      letter-spacing: 0.0656vw;
+      line-height: 7.872vw;
+      padding-top: 7.6vw;
+    }
+    .project h3 {
+      width: 82vw;
+      font-size: 4.1vw;
+      letter-spacing: 0.128125vw;
+      line-height: 6.15vw;
+      padding-top: 3.28vw;
+      padding-bottom: 3.28vw;
+    }
+    .project button {
+      font-size: 3.5875vw;
+      letter-spacing: 0.3203125vw;
+      line-height: 5.38125vw;
+      border: 0.656vw solid #24AFC5;
+      border-radius: 2.624vw;
+      box-shadow: rgba(241, 106, 141, 0.2) 0px 22px 314.88px 295.2px 0px;
+      padding: 3.28vw;
+      margin-top: 4vw;
+      width: fit-content;
+      z-index: 99;
+      align-self: center;
+    } 
+    .caseStudy {
+      width: 100vw;
+      margin-top: 16vw;
+      justify-content: center;
+    }
+    .buttonWrapper  img {
+      width: 12vw;
+      background-color: none;
+      border: none;
+      border-radius: 0vw;
+      padding: none;
+    }
+  
+    #web {
+      display: none;
+    }
+  
+    #mob {
+      display: flex;
+    }
+  /* 
+  .buttonWrapper {
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    height: fit-content;
+    justify-content: space-between;
+    z-index: 8;
+    top: 50%;
+  } */
+  
+  
+    .topBkg {
+      background-image: url(./images/top-bkg-mob.webp);
+    }
+    .mockup4 {
+      width: 22vw;
+      margin-left: 2vw;
+      margin-top: 4.5vw;
+    }
+    .mockup1 {
+      width: 22vw;
+      margin-top: 3vw;
+      margin-right: 2vw;
+      margin-top: 4.5vw;
+    }
+    .mockup2 {
+      width: 20.5vw;
+      margin-left: -2.5vw;
+      margin-top: 3vw;
+    }
+    .mockup3 {
+      width: 21.7vw;
+      margin-left: 1vw;
+      margin-top: 4.05vw;
+    }
+    .square {
+      width: 90vw;
+      height: fit-content;
+      margin-bottom: 2vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      border: .6vw solid #C2EDF4;
+      border-radius: 4.5vw;
+      padding: 1.5vw;
+    }
+    .square p {
+      font-size: 4.1vw;
+      letter-spacing: 0.128125vw;
+      line-height: 6.15vw;
+      width: 80vw;
+    }
+    .squeeze {
+      width: 90vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 3.5vw;
+      margin-bottom: 3.5vw;
+    }
+    .row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .row h1 {
+      font-size: 8.7125vw;
+      letter-spacing: 0.0640625vw;
+      line-height: 13.068749999999999vw;
+      -webkit-text-stroke: .5vw #4169E1; /* Set the border size and color for Webkit browsers */
+    }
+    .row h2 {
+      font-size: 5.248vw;
+      letter-spacing: 0.0656vw;
+      line-height: 7.872vw;
+    }
+    .center {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .cardL {
+      flex-direction: row;
+      width: 90vw;
+      margin-top: 1.5vw;
+      padding: 2.5vw;
+      border-radius: 4.5vw 4.5vw 0vw 0vw;
+      border-left: .6vw solid #C2EDF4;
+      border-top: .6vw solid #C2EDF4;
+      border-right: .6vw solid #C2EDF4;
+      border-bottom: none;
+    }
+    .cardR {
+      width: 90vw;
+      margin-top: -1vw;
+      padding: 2.5vw;
+      border-radius: 0vw 0vw 4.5vw 4.5vw;
+      border-left: .6vw solid #C2EDF4;
+      border-right: .6vw solid #C2EDF4;
+      border-bottom: .6vw solid #C2EDF4;
+      border-top: none;
+    }
+    .card3 {
+      border: .6vw solid #C2EDF4;
+      border-radius: 4.5vw;
+      padding: 1.5vw;
+    }
+    .imgWrapper {
+      width: 85vw;
+      padding-top: 3.2vw;
+      padding-bottom: 3.2vw;
+    }
+  
+    .imgWrapperWide {
+      width: 90vw;
+      height: fit-content;
+      z-index: 1;
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+    }
+    
+    .header h2 {
+      max-width: none;
+      font-size: 5.248vw;
+      letter-spacing: 0.0656vw;
+      line-height: 7.872vw;
+    }
+    .header h3 {
+      max-width: 85vw;
+      font-size: 4.21875vw;
+      letter-spacing: 0.031640625vw;
+      line-height: 6.328125vw;
+    }
+    .header p {
+      max-width: 85vw;
+      font-size: 4.1vw;
+      letter-spacing: 0.128125vw;
+      line-height: 6.15vw;
+    }
+    .persona {
+      width: 90vw;
+      height: 50vw;
+      display: flex;
+      flex-direction: row;
+    }
+    .persona p {
+      width: 60vw;
+      font-size: 3.5875vw;
+      letter-spacing: 0.3203125vw;
+      line-height: 5.38125vw;
+      /* margin-left: -3vw; */
+    }
+    .personaImg { 
+      width: 35vw;
+      margin-right: 2vw;
+    }
+  
+  
+    /* BRIEFBKG INCONSISTENT ACROSS PROJECTS */
+    .briefBkg {
+      /* padding-top: 90vw;   */
+      /* padding-bottom: 6.56vw; */
+    }
+    .bottom {
+      padding-bottom: 6vw;
+      border-top: .6vw solid #C2EDF4;
+    }
+    .bottom p {
+      max-width: 85vw;
+      font-size: 4.1vw;
+      letter-spacing: 0.128125vw;
+      line-height: 6.15vw;
+    }
+    .signature {
+      width: 32.8vw;
+    }
+    .esrImage {
+      width: 90vw;
+      padding-top: 4.5vw;
+      padding-bottom: 4.5vw
+    }
+    .cbImage {
+      width: 90vw;
+      padding-top: 4.5vw;
+      padding-bottom: 4.5vw
+    }
+  
+  }
+  /* CSS rules for medium screens */
+  @media (min-width: 576px) and (max-width: 768px) {
+  
+  }
+  
+  
+      /* x 3.28 */
+  
+  
+          

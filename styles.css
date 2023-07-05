@@ -933,6 +933,7 @@ video {
       }
       .imgWrapper {
         width: 85vw;
+        height: fit-content;
         padding-top: 3.2vw;
         padding-bottom: 3.2vw;
       }
@@ -962,5 +963,6 @@ video {
       }
       .imgWrapperWide {
         width: 90vw;
+        height: fit-content;
       }
     }
