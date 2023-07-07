@@ -306,6 +306,9 @@ footer {
 #right {
   margin-right: .5vw;
 }
+#rightHome {
+  display: none;
+}
 .topBkg {
   width: 100vw;
   height: 60vh;
@@ -727,6 +730,9 @@ sup {
 #mob {
   display: none;
 }
+#home {
+  display: none;
+}
 #web {
   display: flex;
 }
@@ -946,7 +952,6 @@ video {
       .persona p {
         width: 60vw;
         font-size: .8rem;
-
       }
       .personaImg { 
         width: 35vw;
@@ -989,6 +994,9 @@ video {
         max-width: 85vw;
       }
       #mob {
+        display: flex;
+      }
+      #home {
         display: flex;
       }
       #web {
