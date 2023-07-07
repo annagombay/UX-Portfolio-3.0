@@ -520,7 +520,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 40vw;
-  height: auto;
+  /* height: auto; */
   position: relative;
   background-color: white;
   margin-top: 1vh;
@@ -919,6 +919,10 @@ video {
         border-right: .15rem solid #C2EDF4;
         border-bottom: .15rem solid #C2EDF4;
         border-top: none;
+      }
+      .cardR img {
+        width: 100%;
+        height: auto;
       }
       .card3 {
         width: 90vw;
