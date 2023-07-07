@@ -559,7 +559,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 30vw;
-  height: fit-content;
+  /* height: fit-content; */
   z-index: 1;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -569,7 +569,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 38vw;
-  height: fit-content;
+  /* height: fit-content; */
   z-index: 1;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -949,7 +949,7 @@ video {
       }
       .imgWrapper {
         width: 85vw;
-        height: fit-content;
+        /* height: fit-content; */
         padding-top: 3.2vw;
         padding-bottom: 3.2vw;
       }
@@ -978,7 +978,7 @@ video {
       }
       .imgWrapperWide {
         width: 90vw;
-        height: fit-content;
+        /* height: fit-content; */
       }
       .bottom p {
         max-width: 85vw;
@@ -996,3 +996,15 @@ video {
       }
       
     }
+    /* @media screen and (orientation: landscape) {
+      body {
+        transform: rotate(90deg);
+        transform-origin: left top;
+        width: 100vh;
+        height: 100vw;
+        overflow-x: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+    } */
