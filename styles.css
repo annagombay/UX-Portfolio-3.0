@@ -730,7 +730,10 @@ sup {
 #mob {
   display: none;
 }
-#home {
+#leftHome {
+  display: none;
+}
+#rightHome {
   display: none;
 }
 #web {
