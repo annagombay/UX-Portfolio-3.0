@@ -32,7 +32,7 @@ function openDetailsPage(projectId) {
   }
 
   // Open the project details page
-  window.open(projectDetailsFile, '_blank');
+  window.open(projectDetailsFile, '_self');
 }
 
 // Typing animation on navbar 

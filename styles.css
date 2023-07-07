@@ -130,9 +130,6 @@ nav h1:hover {
   width: 100%;
   height: auto;
 }
-#hero-img-mob {
-  display: none;
-}
 
 /* Projects */ 
 #projects {
@@ -141,7 +138,6 @@ nav h1:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(./images/background-image.webp);
   background-position: center;
   background-size: cover;
   margin: 0 auto;
@@ -309,12 +305,6 @@ footer {
 } 
 #right {
   margin-right: .5vw;
-}
-#web {
-  display: flex;
-}
-#mob {
-  display: none;
 }
 .topBkg {
   width: 100vw;
@@ -717,16 +707,10 @@ sup {
   position: relative;
   z-index: 9;
 }
-#bkg {
-background-image: url(./images/background-image.webp);
-margin: 0 auto;
-}
-
 #full-width {
   width: 100vw;
   /* max-width: none; */
 }
-
 #bold {
   font-weight: 900;
 }
@@ -738,6 +722,12 @@ margin: 0 auto;
   border-right: 0.15em solid transparent; 
   animation: typing 1s steps(40, end); 
   cursor: pointer;
+}
+#mob {
+  display: none;
+}
+#web {
+  display: flex;
 }
 
 @keyframes typing {
@@ -757,6 +747,18 @@ video {
 /* Media Queries */
 
   @media (max-width: 1127px) {
+    .heroImage {
+      width: 100vw;
+      height: auto;
+      position: absolute;
+      bottom: 2vh;
+      border-top: 100vh solid #562CD8;
+
+    }
+    .heroImage img {
+      width: 100vw;
+      height: auto;
+    }
     .projectSection {
       flex-direction: column;
       align-items: center;
@@ -788,21 +790,6 @@ video {
     #no-show {
       display: none;
     }
-    #hero-img {
-      display: none;
-    }
-    #hero-img-mob {
-      display: flex;
-      width: 100vw;
-      height: auto;
-      position: absolute;
-      left: 0vw;
-      bottom: 0vh;
-    }
-    .heroImage {
-      width: 100vw;
-      height: 100vh;
-    }
     #black {
       color: white;
     }
@@ -822,12 +809,6 @@ video {
       border: none;
       border-radius: 0vw;
       padding: none;
-    }
-    #web {
-      display: none;
-    }
-    #mob {
-      display: flex;
     }
     .squeeze {
       width: 90vw;
@@ -873,10 +854,41 @@ video {
     .header h2 {
       max-width: 55vw;
     }
-
+    #mob {
+      display: flex;
+    }
+    #web {
+      display: none;
+    }
   }
 
-    @media (max-width: 912px) {
+    @media (max-width: 652px) {
+      nav {
+        font-size: 1.3rem;
+        padding-left:.2rem;
+      }
+      .hiddenButton {
+        width: 55vw;
+      }
+      .socialLinks{
+        width: 100vw;
+        height: 6vh;
+        margin-top: -7vh;
+      }
+      .socialLink{
+        padding-left:.2rem;
+      }
+      .squeeze {
+        margin-top: .7rem;
+        margin-bottom: 0rem;
+      }
+      .square {
+        margin-bottom: .7rem;
+        border-radius: .7rem;
+      }
+      .square p {
+        max-width: 85vw;
+      }
       .landingContent {
         margin-top: -45vh;
       }
@@ -888,7 +900,9 @@ video {
       .cardL {
         flex-direction: row;
         width: 90vw;
-        padding: 1rem;
+        padding: .5rem;
+        padding-top: .7rem;
+        padding-bottom: .7rem;
         border-radius: 2rem 2rem 0 0;
         border-left: .15rem solid #C2EDF4;
         border-top: .15rem solid #C2EDF4;
@@ -898,7 +912,7 @@ video {
       .cardR {
         width: 90vw;
         margin-top: -1vw;
-        padding: 1rem;
+        padding: .5rem;
         border-radius: 0 0 2rem 2rem;
         border-left: .15rem solid #C2EDF4;
         border-right: .15rem solid #C2EDF4;
@@ -910,7 +924,7 @@ video {
         padding: 1rem;
       }
       .header h2 {
-        max-width: 90vw;
+        max-width: 85vw;
       }
       .header h3 {
         max-width: 85vw;
@@ -926,6 +940,8 @@ video {
       }
       .persona p {
         width: 60vw;
+        font-size: .8rem;
+
       }
       .personaImg { 
         width: 35vw;
@@ -939,10 +955,9 @@ video {
       }
       .topBkg {
         background-image: url(./images/top-bkg-mob.webp);
-
       }
       .signature {
-        width: 18vw;
+        width: 34vw;
       }
       .esrImage {
         width: 90vw;
@@ -950,7 +965,7 @@ video {
       .cbImage {
         width: 90vw;
       }
-      .buttonWrapper  img {
+      .buttonWrapper img {
         width: 12vw;
       }
       video {
@@ -965,4 +980,19 @@ video {
         width: 90vw;
         height: fit-content;
       }
+      .bottom p {
+        max-width: 85vw;
+      }
+      #mob {
+        display: flex;
+      }
+      #web {
+        display: none;
+      }
+      .row h1 {
+        font-size: 2.65625rem;
+        letter-spacing: 0.01953125rem;
+        line-height: 3.9843749999999996rem;
+      }
+      
     }
