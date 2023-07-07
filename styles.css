@@ -520,6 +520,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 40vw;
+  height: auto;
   position: relative;
   background-color: white;
   margin-top: 1vh;
