@@ -306,7 +306,7 @@ footer {
 #right {
   margin-right: .5vw;
 }
-#rightHome {
+#leftHome {
   display: none;
 }
 .topBkg {
@@ -996,8 +996,13 @@ video {
       #mob {
         display: flex;
       }
-      #home {
+      #leftHome {
         display: flex;
+        margin-left: .5vw;
+      }
+      #rightHome {
+        display: flex;
+        margin-right: .5vw;
       }
       #web {
         display: none;
