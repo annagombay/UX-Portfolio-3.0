@@ -30,7 +30,7 @@ nav {
   font-size: 1.6rem;
   letter-spacing: .02rem;
   line-height: 8vh;
-  color: black;
+  color: #2F2E41;
   margin-left: 2vw;
 }
 nav h1 {
@@ -67,7 +67,7 @@ nav h1:hover {
 
 /* Hero */
 .landingPage {
-  height: 100vh;
+  height: 85vh;
   width: 100vw;
   margin: 0 auto;
   display: flex;
@@ -88,27 +88,33 @@ nav h1:hover {
   font-size: 2rem;
   margin: 0;
   text-align: left;
-  font-family: 'BIZ UDPGothic', sans-serif;
-  color: #24AFC5;
+  font-family: 'DM Sans', sans-serif;
+  color: #2F2E41;
   position: relative;
   z-index: 3;
-  font-weight: 600;
+  font-weight: 550;
 }
-#black {
-  color: #1D263B;
+#blue {
+  color: #4169E1;
 }
 #swap {
-  color: #1D263B;
+  /* color: #1D263B; */
+  color: #2F2E41;
   cursor: auto;
 }
+#coming-soon {
+  cursor: auto;
+  transform: none;
+  background-color: transparent;
+}
 .seeProjectsBtn {
-  font-size: 1.09375rem;
-  letter-spacing: 0.09765625rem;
+  font-size: 1rem;
+  letter-spacing: 0.04rem;
   text-transform: uppercase;
-  line-height: 1.640625vh;
+  line-height: 1rem;
   padding: 1rem;
-  border: .2rem solid #24AFC5;
-  border-radius: .8rem;
+  border: .1rem solid #24AFC5;
+  border-radius: .6rem;
   margin-top: 5vh;
   font-family: 'Roboto', sans-serif;
   font-weight: bold; 
@@ -116,11 +122,10 @@ nav h1:hover {
   color: #24AFC5;
   background-color: #C2EDF4;  
   z-index: 10;
+  transition: transform 0.3s ease; /* Smooth transition for the scale effect */
 }
 .seeProjectsBtn:hover {
-  border: .2rem solid #C2EDF4;
-  color: #C2EDF4;
-  background-color: #24AFC5;  
+transform: scale(1.1);
 }
 .heroImage {
   width: 65vw;
@@ -133,7 +138,7 @@ nav h1:hover {
 
 /* Projects */ 
 #projects {
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,10 +153,11 @@ nav h1:hover {
   padding: 0rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
 }
 .project {
-  width: 27vw;
+  width: 23vw;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -161,47 +167,51 @@ nav h1:hover {
   transition: box-shadow 0.3s ease;
   padding-bottom: 2rem;
   border-radius: 1rem;
-  border: .2rem solid #C2EDF4;
+  border: .15rem solid #C2EDF4;
   margin-top: 4vh;
   padding-bottom: 4rem;
   position: relative;
+  
 }
 .title {
-  height: 5vh;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  padding-left: 1vw;
-  padding-right: 1vw;
+  height: 9vh;
+  padding: .6rem;
+
 }
 .project h2 {
   width: fit-content;
   margin: 0;
-  font-family: 'BIZ UDPGothic', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 1.6rem;
-  letter-spacing: .02rem;
-  line-height: 2.4vh;
-  color: #1D263B;
+  font-weight: 550;
+  letter-spacing: -0.05rem;
+  line-height: 4vh;
+  /* color: #1D263B; */
+  color: #2F2E41;
   position: relative;
   top: 50%;
   transform: translatey(-50%);
+  text-align: center;
+  /* padding-top: 1rem; */
+  /* padding-bottom: 1rem; */
 }
 .subTitle {
-  height: 5vh;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  padding-left: 1vw;
-  padding-right: 1vw;
-}
+  height: 4vh;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-bottom: .5rem;
+ }
 .project h3 {
   width: fit-content;
-  font-size: 1.25rem;
-  letter-spacing: 0.0390625rem;
-  line-height: 2.875vh;
+  font-size: 1.1rem;
+  /* letter-spacing: 0rem; */
+  line-height: 3.5vh;
   margin: 0;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  color: #888;
+  /* color: #1D263B; */
+  color: #667085;
   position: relative;
   top: 50%;
   transform: translatey(-50%);
@@ -209,37 +219,48 @@ nav h1:hover {
 .project:hover {
   box-shadow: 0 .625rem 1.875rem rgba(76, 55, 208,.2);
 }
-.projectImg {
-  height: 27vh;
-  width: 27vw;
-}
+/* .projectImg {
+  height: 27rem;
+  width: 27rem;
+} */
 .project img {
-  width: 27vw;
+  width: 20rem;
   height: fit-content;
-  padding-bottom: 3vh;
+  /* padding-bottom: 3vh; */
 }
 .project button {
   font-family: 'Roboto', sans-serif;
   font-weight: bold; 
-  font-size: 1.09375rem;
-  letter-spacing: 0.09765625rem;
-  line-height: 1.640625vh; 
+  font-size: 1rem;
+  letter-spacing: 0.04rem;
+  line-height: 1rem;
   color: #24AFC5;
   background-color: #C2EDF4;
-  border: .2rem solid #24AFC5;
-  border-radius: .8rem;
+  border: .1rem solid #24AFC5;
+  border-radius: .6rem;
   cursor: pointer;
   padding: 1rem;
   text-transform: uppercase;
   position: absolute;
   bottom: 0;
   margin-bottom: 1rem;
+  transition: transform 0.3s ease; /* Smooth transition for the scale effect */
 }
+
+.project button:hover {
+  transform: scale(1.1);
+  }
+
+#stretch {
+  padding-top: 2.55vh;
+  padding-bottom: 2.55vh;
+}
+
 
 /* Footer */
 footer {
   width: 100%;
-  height: 2vh;
+  height: 3vh;
   margin: 0 auto;
   background-image: url(./images/nav-image.webp);
   background-position: center;
@@ -254,11 +275,12 @@ footer {
   padding-bottom: 1vh;
   font-size: 1rem;
   letter-spacing: 0.0390625vw;
-  line-height: 1.875vh;
+  line-height: 3vh;
   margin: 0;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
-  color: #1D263B;
+  /* color: #1D263B; */
+  color: #2F2E41;
 }
 
 /* Project Details */
@@ -280,14 +302,15 @@ footer {
 .caseStudy button {
   font-family: 'Roboto', sans-serif;
   font-weight: bold; 
-  font-size: 1.09375rem;
-  letter-spacing: 0.09765625rem;
+  font-size: 1rem;
+  letter-spacing: 0.04rem;
+  line-height: 1rem;
   color: #24AFC5;
   background-color: #C2EDF4;
-  border: .2rem solid #24AFC5;
-  border-radius: .8rem;
-  cursor: pointer;
+  border: .1rem solid #24AFC5;
+  border-radius: .6rem;
   padding: 1rem;
+  cursor: pointer;
   text-transform: uppercase;
   width: fit-content;
 }
@@ -301,10 +324,10 @@ footer {
   top: 50%;
 }
 #left {
-  margin-left: .5vw;
+  margin-left: 1vw;
 } 
 #right {
-  margin-right: .5vw;
+  margin-right: 1vw;
 }
 #leftHome {
   display: none;
@@ -319,7 +342,7 @@ footer {
   object-fit: fill;
   background-repeat: none;
   object-position: center;
-  margin-top: -3vh;
+  margin-top: -5vh;
 }
 .row {
   display: flex;
@@ -330,11 +353,11 @@ footer {
 }
 .row h1 {
   display: flex;
-  font-family: 'BIZ UDPGothic', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   color: #4169E1;
   font-size: 3.75rem;
-  letter-spacing: 0.01953125rem;
-  line-height: 5.625rem;
+  letter-spacing: 0.09rem;
+  line-height: 4rem;
   margin: 0 auto;
    -webkit-text-stroke: .25rem #4169E1;
   position: relative;
@@ -346,8 +369,9 @@ footer {
   color: #24AFC5;
   font-weight: bolder;
   font-size: 1.875rem;
-  line-height: 4rem;
+  line-height: 3rem;
   letter-spacing: -0.055rem;
+  padding-bottom: 1vh;
   margin: 0 auto;
   position: relative;
   z-index: 4;
@@ -378,36 +402,39 @@ footer {
 }
 .header h2 {
   max-width: 33vw;
-  font-family: 'BIZ UDGothic', sans-serif;
-  font-weight: 900;
-  font-size: 2.65625rem;
-  letter-spacing: 0.01953125rem;
-  line-height: 3.9843749999999996rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 550;
+  font-size: 1.6rem;
+  letter-spacing: -0.05rem;
+  line-height: 2.4vh;
   color: #4169E1;
   margin: 0;
 }
 .header h3 {
   max-width: 33vw;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 1.5625rem;
-  letter-spacing: 0.01171875rem;
-  line-height: 2.34375rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 0.01rem;
+  line-height: 4vh;
   color: #24AFC5;
   margin: 0;
   padding-bottom: 1vh;
+  padding-top: .5vh;
 }
 .header p {
   max-width: 33vw;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.25rem;
-  letter-spacing: 0.0390625rem;
-  line-height: 1.875rem;
-  color: #1D1B26;
+  font-size: 1.1rem;
+  line-height: 4vh;
+  color: #667085;
   overflow-wrap: break-word;
   text-align: left;
-  margin-top: 0;
   font-weight: normal;
+  padding-bottom: 1.2vh;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0rem;
 }
 .mockup4 {
   display: flex;
@@ -466,7 +493,7 @@ footer {
   background-image: url(./images/nav-image.webp);
   object-fit: cover;
   border: .15rem solid #C2EDF4;
-  border-radius: 3rem;
+  border-radius: 1rem;
   /* overflow: hidden; */
   padding: 1vw;
 }
@@ -474,12 +501,13 @@ footer {
   display: flex;
   flex-direction: row;
   text-align: center;
-  font-family: 'BIZ UDGothic', sans-serif;
-  font-weight: bolder;
-  font-size: 2.65625rem;
-  letter-spacing: 0.01953125rem;
-  line-height: 3.9843749999999996rem;
-  color: #24AFC5;
+  /* font-family: 'BIZ UDGothic', sans-serif; */
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 550;
+  font-size: 1.6rem;
+  letter-spacing: -0.05rem;
+  line-height: 2.4vh;
+  color: #2F2E41;
   text-transform: uppercase;
   margin-top: 1vw;
   margin-bottom: 0;
@@ -487,31 +515,30 @@ footer {
 .square p {
   display: inline;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.25rem;
-  letter-spacing: 0.0390625rem;
-  line-height: 1.875rem;
-  color: #1D1B26;
-  font-weight: bold;
+  font-size: 1.1rem;
+  /* letter-spacing: 0.0390625rem; */
+  line-height: 3.5vh;
+  color: #667085;
+  font-weight: 400;
   position: relative;
   z-index: 1;
-  margin-top: 0;
-  font-weight: normal;
+  margin-top: .5rem;
 }
 .cardL {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40vw;
+  width: 41.5vw;
   position: relative;
   background-image: url(./images/nav-image.webp);
   object-fit: cover;
   margin-top: 1vh;
   z-index: 6;
   border-radius: 2rem;
-  padding: 2rem;
+  /* padding: 2rem; */
   overflow: hidden;
-  border-radius: 2rem 0 0 2rem;
+  border-radius: 1rem 0 0 1rem;
   border-left: .15rem solid #C2EDF4;
   border-top: .15rem solid #C2EDF4;
   border-bottom: .15rem solid #C2EDF4;
@@ -522,13 +549,13 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 40vw;
+  width: 41.5vw;
   /* height: auto; */
   position: relative;
   background-color: white;
   margin-top: 1vh;
   overflow: hidden;
-  border-radius: 0 2rem 2rem 0;
+  border-radius: 0 1rem 1rem 0;
   border-top: .15rem solid #C2EDF4;
   border-right: .15rem solid #C2EDF4;
   border-bottom: .15rem solid #C2EDF4;
@@ -608,14 +635,15 @@ sup {
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
   font-size: 1.09375rem;
-  letter-spacing: 0.01953125rem;
+  letter-spacing: 0rem;
   line-height: 1.640625rem;
   color: #46464F;
-  font-weight: bold;
+  font-weight: 500;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   margin-left: 3vw;
+  
 }
 .personaImg { 
   display: flex;
@@ -645,8 +673,8 @@ sup {
   background-repeat: none;
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
-  padding-bottom: 2rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
   z-index: 2;
   justify-content: center;
 }
@@ -665,24 +693,24 @@ sup {
 .bottom h2 {
   display: flex;
   flex-direction: row;
-  font-family: 'BIZ UDGothic', sans-serif;
-  font-weight: 900;
-  font-size: 2.65625rem;
-  letter-spacing: 0.01953125rem;
-  line-height: 3.9843749999999996rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 550;
+  font-size: 3.75rem;
+  letter-spacing: 0.09rem;
+  line-height: 4rem;
   color: #4169E1;
   margin: 0 auto;
 }
 .bottom p {
   max-width: 50vw;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   letter-spacing: 0.0390625rem;
-  line-height: 1.875rem;
-  color: #1D1B26;
+  line-height: 3.5vh;
+  color: #667085;
   overflow-wrap: break-word;
   margin-top: 0 auto;
-  font-weight: normal;
+  font-weight: 400;
 }
 .esrFeature {
   width: 85vw;

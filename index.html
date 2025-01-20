@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <!--Font: Cedarville -->
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <!--Font: DM Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WH2F8Q5S9V"></script>
@@ -41,15 +43,7 @@
 
     <section class="landingPage">
       <div class="landingContent">
-          <h1 id="black">I am a</h1>
-            <br id="no-show">
-            <br>
-          <h1>UX Designer</h1>
-            <br id="no-show">
-            <br>
-          <h1 id="black">building bridges between</h1>
-            <br>
-          <h1 id="black">people and products</h1>
+          <h1>I'm a <span id="blue">UX designer</span> building bridges between people and products</h1>
           <button class="seeProjectsBtn" onclick="scrollToProjects()">See Projects</button>
       </div>
       <div class="heroImage">
@@ -59,12 +53,22 @@
 
     <main id="projects" role="main">
       <section class="projectSection">
+        <div class="project" id="esr">
+          <div class="title">
+            <h2>OUR CANCER <br>CARE TOOLS</h2>
+          </div>
+          <div class="subTitle">
+            <h3>A website hosting AI-powered risk calculators for cancer patients </h3>
+          </div>
+            <img src="./images/occt-project.png" alt="occt-project" id="stretch">
+          <button id="coming-soon">Coming Soon</button>
+        </div>
         <div class="project">
           <div class="title">
               <h2>OK NOT OK</h2>
           </div>
           <div class="subTitle">
-            <h3>A mobile app to measure the relationship between medication and mood</h3>
+            <h3>An app measuring the relationship between medication and mood</h3>
           </div>
           <img src="./images/ono-project.png" alt="ono-project">
           <button onclick="openDetailsPage(1)">View Project</button>
@@ -84,7 +88,7 @@
             <h2>EAT SLEEP RIDE</h2>
           </div>
           <div class="subTitle">
-            <h3>A user-centric website redesign for a motorcycling app</h3>
+            <h3>A user-centric website redesign for a motorcycling startup</h3>
           </div>
             <img src="./images/esr-project.webp" alt="esr-project">
           <button onclick="openDetailsPage(3)">View Project</button>
