@@ -555,7 +555,7 @@ footer {
   padding-bottom: 1rem;
   z-index: 5;
   border: .15rem solid #C2EDF4;
-  border-radius: 2rem;
+  border-radius: 1rem;
   background-image: url(./images/nav-image.webp);
 }
 .card3 h2 {
@@ -838,7 +838,7 @@ video {
       justify-content: center;
     }
     .square {
-      width: 90vw;
+      width: 85vw;
       height: fit-content;
       margin-bottom: 2rem;
       display: flex;
