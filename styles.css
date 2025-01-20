@@ -176,7 +176,6 @@ transform: scale(1.1);
 .title {
   height: fit-content;
   padding: .6rem;
-
 }
 .project h2 {
   width: fit-content;
@@ -186,7 +185,6 @@ transform: scale(1.1);
   font-weight: 550;
   letter-spacing: -0.05rem;
   line-height: 4vh;
-  /* color: #1D263B; */
   color: #2F2E41;
   position: relative;
   top: 50%;
