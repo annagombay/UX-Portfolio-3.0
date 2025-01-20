@@ -182,7 +182,7 @@ transform: scale(1.1);
   width: fit-content;
   margin: 0;
   font-family: 'DM Sans', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 550;
   letter-spacing: -0.05rem;
   line-height: 4vh;
@@ -495,7 +495,7 @@ footer {
   border: .15rem solid #C2EDF4;
   border-radius: 1rem;
   /* overflow: hidden; */
-  padding: 1vw;
+  padding: 1rem;
 }
 .square h2 {
   display: flex;
