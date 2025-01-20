@@ -930,6 +930,10 @@ video {
       .landingContent {
         margin-top: -45vh;
       }
+      #blue {
+        color: #C2EDF4;
+        ;
+      }
       .row {
         flex-direction: column;
         justify-content: center;
