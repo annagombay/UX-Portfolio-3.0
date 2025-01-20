@@ -174,7 +174,7 @@ transform: scale(1.1);
   
 }
 .title {
-  height: fit-content;
+  height: 9vh;
   padding: .6rem;
 }
 .project h2 {
@@ -190,7 +190,7 @@ transform: scale(1.1);
   top: 50%;
   transform: translatey(-50%);
   text-align: center;
-  margin-top: 1rem;
+  /* padding-top: 1rem; */
   /* padding-bottom: 1rem; */
 }
 .subTitle {
@@ -213,12 +213,16 @@ transform: scale(1.1);
   transform: translatey(-50%);
 }
 .project:hover {
-  box-shadow: 0 .625rem 1.875rem rgba(136, 124, 212, 0.2);
+  box-shadow: 0 .625rem 1.875rem rgba(76, 55, 208,.2);
 }
 .project img {
   width: 20rem;
-  height: 20rem;
-  /* height: fit-content; */
+  /* height: 20rem; */
+  height: fit-content;
+}
+#stretch {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
 }
 .project button {
   font-family: 'Roboto', sans-serif;
