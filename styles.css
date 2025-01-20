@@ -174,7 +174,7 @@ transform: scale(1.1);
   
 }
 .title {
-  height: 9vh;
+  height: fit-content;
   padding: .6rem;
 
 }
@@ -182,7 +182,7 @@ transform: scale(1.1);
   width: fit-content;
   margin: 0;
   font-family: 'DM Sans', sans-serif;
-  font-size: 1.rem;
+  font-size: 1.4rem;
   font-weight: 550;
   letter-spacing: -0.05rem;
   line-height: 4vh;
@@ -192,7 +192,7 @@ transform: scale(1.1);
   top: 50%;
   transform: translatey(-50%);
   text-align: center;
-  /* padding-top: 1rem; */
+  margin-top: 1rem;
   /* padding-bottom: 1rem; */
 }
 .subTitle {
@@ -204,13 +204,11 @@ transform: scale(1.1);
 .project h3 {
   width: fit-content;
   font-size: 1.1rem;
-  /* letter-spacing: 0rem; */
-  line-height: 3.5vh;
+  line-height: 1.5rem;
   margin: 0;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  /* color: #1D263B; */
   color: #667085;
   position: relative;
   top: 50%;
@@ -219,14 +217,13 @@ transform: scale(1.1);
 .project:hover {
   box-shadow: 0 .625rem 1.875rem rgba(76, 55, 208,.2);
 }
-/* .projectImg {
-  height: 27rem;
-  width: 27rem;
-} */
 .project img {
   width: 20rem;
   height: fit-content;
-  /* padding-bottom: 3vh; */
+}
+#stretch {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
 }
 .project button {
   font-family: 'Roboto', sans-serif;
@@ -250,12 +247,6 @@ transform: scale(1.1);
 .project button:hover {
   transform: scale(1.1);
   }
-
-#stretch {
-  padding-top: 2.55vh;
-  padding-bottom: 2.55vh;
-}
-
 
 /* Footer */
 footer {
@@ -406,7 +397,7 @@ footer {
   font-weight: 550;
   font-size: 1.6rem;
   letter-spacing: -0.05rem;
-  line-height: 2.4vh;
+  line-height: 1.7rem;
   color: #4169E1;
   margin: 0;
 }
@@ -416,22 +407,21 @@ footer {
   font-weight: 500;
   font-size: 1.2rem;
   letter-spacing: 0.01rem;
-  line-height: 4vh;
+  line-height: 1.5rem;
   color: #24AFC5;
   margin: 0;
-  padding-bottom: 1vh;
-  padding-top: .5vh;
+  padding-bottom: 1rem;
 }
 .header p {
   max-width: 33vw;
   font-family: 'Roboto', sans-serif;
   font-size: 1.1rem;
-  line-height: 4vh;
+  line-height: 1.5rem;
   color: #667085;
   overflow-wrap: break-word;
   text-align: left;
   font-weight: normal;
-  padding-bottom: 1.2vh;
+  padding-bottom: 1rem;
   margin: 0;
   font-weight: 400;
   letter-spacing: 0rem;
@@ -494,35 +484,30 @@ footer {
   object-fit: cover;
   border: .15rem solid #C2EDF4;
   border-radius: 1rem;
-  /* overflow: hidden; */
-  padding: 1vw;
+  padding: 1rem;
 }
 .square h2 {
   display: flex;
   flex-direction: row;
   text-align: center;
-  /* font-family: 'BIZ UDGothic', sans-serif; */
   font-family: 'DM Sans', sans-serif;
   font-weight: 550;
   font-size: 1.6rem;
   letter-spacing: -0.05rem;
-  line-height: 2.4vh;
+  line-height: 1.7rem;
   color: #2F2E41;
   text-transform: uppercase;
-  margin-top: 1vw;
-  margin-bottom: 0;
 }
 .square p {
   display: inline;
   font-family: 'Roboto', sans-serif;
   font-size: 1.1rem;
-  /* letter-spacing: 0.0390625rem; */
-  line-height: 3.5vh;
+  line-height: 1.5rem;
   color: #667085;
   font-weight: 400;
   position: relative;
   z-index: 1;
-  margin-top: .5rem;
+  margin: 0;
 }
 .cardL {
   display: flex;
@@ -536,7 +521,7 @@ footer {
   margin-top: 1vh;
   z-index: 6;
   border-radius: 2rem;
-  /* padding: 2rem; */
+  padding-top: 1rem;
   overflow: hidden;
   border-radius: 1rem 0 0 1rem;
   border-left: .15rem solid #C2EDF4;
@@ -674,7 +659,7 @@ sup {
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
   z-index: 2;
   justify-content: center;
 }
@@ -695,9 +680,9 @@ sup {
   flex-direction: row;
   font-family: 'DM Sans', sans-serif;
   font-weight: 550;
-  font-size: 3.75rem;
-  letter-spacing: 0.09rem;
-  line-height: 4rem;
+  font-size: 1.6rem;
+  letter-spacing: -0.05rem;
+  line-height: 1.7rem;
   color: #4169E1;
   margin: 0 auto;
 }
@@ -705,8 +690,8 @@ sup {
   max-width: 50vw;
   font-family: 'Roboto', sans-serif;
   font-size: 1.1rem;
-  letter-spacing: 0.0390625rem;
-  line-height: 3.5vh;
+  letter-spacing: 0rem;
+  line-height: 1.5rem;
   color: #667085;
   overflow-wrap: break-word;
   margin-top: 0 auto;
