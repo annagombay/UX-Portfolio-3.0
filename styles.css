@@ -1026,9 +1026,9 @@ video {
         display: none;
       }
       .row h1 {
-        font-size: 2.65625rem;
-        letter-spacing: 0.01953125rem;
-        line-height: 3.9843749999999996rem;
+        /* font-size: 3.75rem; */
+        /* letter-spacing: 0.09rem; */
+        /* line-height: 3.9843749999999996rem; */
       }
       
     }
