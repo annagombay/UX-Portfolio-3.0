@@ -175,7 +175,6 @@ transform: scale(1.1);
 }
 .title {
   height: fit-content;
-  min-height: 1.6rem;
   padding: .6rem;
 
 }
@@ -189,7 +188,7 @@ transform: scale(1.1);
   letter-spacing: -0.05rem;
   line-height: 1.6rem;
   /* color: #1D263B; */
-  color: #2F2E41;
+  color: red;
   position: relative;
   top: 50%;
   transform: translatey(-50%);
