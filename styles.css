@@ -871,6 +871,7 @@ video {
     }
     .signature {
       width: 14vw;
+      padding-bottom: .5rem;
     }
     .header h2 {
       max-width: 55vw;
