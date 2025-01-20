@@ -986,6 +986,7 @@ video {
       }
       .signature {
         width: 34vw;
+        padding-bottom: .5rem;
       }
       .esrImage {
         width: 90vw;
