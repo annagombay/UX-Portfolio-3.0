@@ -213,15 +213,12 @@ transform: scale(1.1);
   transform: translatey(-50%);
 }
 .project:hover {
-  box-shadow: 0 .625rem 1.875rem rgba(76, 55, 208,.2);
+  box-shadow: 0 .625rem 1.875rem rgba(136, 124, 212, 0.2);
 }
 .project img {
   width: 20rem;
-  height: fit-content;
-}
-#stretch {
-  padding-top: 2.5vh;
-  padding-bottom: 2.5vh;
+  height: 20rem;
+  /* height: fit-content; */
 }
 .project button {
   font-family: 'Roboto', sans-serif;
