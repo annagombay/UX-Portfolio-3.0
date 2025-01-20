@@ -221,8 +221,8 @@ transform: scale(1.1);
   height: fit-content;
 }
 #stretch {
-  padding-top: 2.5vh;
-  padding-bottom: 2.5vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 .project button {
   font-family: 'Roboto', sans-serif;
