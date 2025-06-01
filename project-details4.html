@@ -1,0 +1,398 @@
+<!-- project-details.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <!-- Font: UDP Gothic / Corben / Roboto / Cedarville -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <!--Font: Cedarville -->
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <!--Font: DM Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WH2F8Q5S9V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WH2F8Q5S9V');
+</script>
+  
+  <body onload="typeText()" id="bkg">
+
+    <header>
+      <nav>
+        <h1 class="hiddenButton" id="typing-animation" alt="Hi, I'm Anna"></h1>
+      </nav>
+      <div class="socialLinks">
+        <img onclick="openEmail()" class="socialLink" src="./images/email.webp">
+        <img onclick="openGithub()" class="socialLink" src="./images/github.webp">
+        <img onclick="openLinkedIn()"class="socialLink" src="./images/linked-in.webp">
+      </div>
+    </header>
+
+    <div class="caseStudy">
+
+      <div class="buttonWrapper" id="web">
+        <button id="left" onclick="goHome()">HOME</button>
+        <button id="right" onclick="openDetailsPage(2)">NEXT</button>
+      </div>
+
+      <div class="buttonWrapper" id="mob">
+        <img id="leftHome" src="./images/home-button.webp" onclick="goHome()">
+        <img id="right" src="./images/forward-button.webp" onclick="openDetailsPage(2)">
+      </div>
+
+      <section>
+        <div class="topBkg"></div>
+        <div class="row">
+          <h1>
+            OURCANCERCARETOOLS
+          </h1>     
+        </div>
+        <div class="row">
+          <h2> 
+            Personalized cancer care through predictive AI
+          </h2> 
+        </div>  
+      </section>
+
+      <section>
+        <div class="row">
+            <div class="hero">
+              <div class="col">
+                <div class="center">
+                  <img class="mockup4" src="./images/ono-mockup4.webp" alt="ono-mockup4" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="center">
+                  <img class="mockup1" src="./images/ono-mockup1.webp" alt="ono-mockup1" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="center">
+                  <img class="mockup2" src="./images/ono-mockup2.webp" alt="ono-mockup2"/>
+                </div>  
+              </div>
+              <div class="col">
+                <div class="center">
+                  <img class="mockup3" src="./images/ono-mockup3.webp" alt="ono-mockup3" />         
+                </div>        
+              </div>
+            </div> 
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="squeeze">
+            <div class="square">
+              <h2> 
+                Brief 
+              </h2>
+              <p> 
+                A web platform using predictive AI to provide personalized information about expectations after a cancer diagnosis
+            </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Goal 
+              </h2>
+              <p> 
+                Empower cancer patients, care partners, and healthcare providers with tailored information to help shape cancer care
+              </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Roles 
+              </h2>
+              <p>
+                UX Researcher
+                <br>
+                UX Designer
+                <br>
+                Webflow Developer
+              </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Tools 
+              </h2>
+              <p>
+                Figma
+                <br>
+                Webflow 
+              </p>
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">  
+                <h2>
+                  THE PROBLEM
+                </h2>
+                <h3> 
+                  Personal preferences are underrepresented in cancer care 
+                </h3>
+                <p>
+                    A cancer diagnosis is a profound shock that often prompts people to re-evaluate their values, priorities, and sense of self.
+                </p>
+                <p> 
+                    While cancer care understandably centers on prolonging life, this emphasis on survival can overshadow what makes life feel worth living--a person’s quality of life.
+                </p>
+                <p>
+                    When survival is treated as the default goal, without space for individual preferences, patients may feel unseen, as though their identity is lost precisely when they most need to feel known.
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <img class="imgWrapper" src="./images/ono-shrink-tank.webp" alt="ono-shrink-tank"/>
+          </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">  
+                <h2>
+                  DESIGNING A SOLUTION
+                </h2>
+                <h3> 
+                  Talking to psychiatric medication users
+                </h3>
+                <p>
+                  I interviewed five people who had been taking psychiatric medication daily for at least 6 months.
+                </p>
+                <p> 
+                  The goal was to understand their daily experiences, focusing on mood, symptoms, and medication-related challenges.
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <img class="imgWrapper" src="./images/ono-interviews.webp" alt="ono-interviews"/>
+          </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">  
+                <h3> 
+                  Considering wants and needs   
+                </h3>
+                <p>
+                  From the interviews, I identified common themes by categorizing the feedback into wants, needs, pains, and opportunities.
+                </p>
+                <p> 
+                  I then created personas to represent different user experiences, which helped me maintain empathy throughout the design process and anticipate medication users’ needs.
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <div class="imgWrapper">
+              <div class="personaWrapper">
+                <div class="persona">
+                  <p>
+                      "I want to know if my medication is impacting my mood day-to-day. Is it helping?" 
+                  </p>
+                  <div class="personaImg">
+                      <img src="./images/ono-persona-1.webp" alt="ono-persona-1"/>
+                  </div>
+                </div>
+                <div class="persona">
+                  <p>
+                      "I feel isolated in my environment. I want to connect with people who face mental health challenges similar to my own."  
+                  </p>
+                  <div class="personaImg">
+                      <img src="./images/ono-persona-2.webp" alt="ono-persona-2"/>
+                  </div>
+                </div>
+                <div class="persona">
+                  <p>
+                      "I need to undestand my diagnosis better. Are there alternatives to medication that could help me?"
+                  </p>
+                  <div class="personaImg">
+                      <img src="./images/ono-persona-3.webp" alt="ono-persona-3"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Mapping out problems and solutions   
+              </h3>
+              <p>
+                To broaden the scope from which I could brainstorm design themes, I created an exhaustive list of user-relevant problems, ideas, quotes, emotions, thoughts, and potential solutions.              </p>
+            </div>
+          </div>
+        </div>  
+        <div class="cardR">
+          <img class="imgWrapper" src="./images/ono-affinity-map.webp" alt="ono-affinity-map"/>
+        </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Analyzing competitors 
+              </h3>
+              <p>
+                To understand the competitive landscape, I analyzed apps with goals similar to my own and found that most used a simple "mood scale" ranging from "very good" to "very bad. 
+              </p>
+              <p>
+                This binary system seemed too limiting, as it implied that high moods are always positive and low moods are always negative. 
+              </p>
+              <p>
+                To encourage a perspective that moods are dynamic and all valuable for different reasons, I decided to include a second dimension in my mood scale to measure mood intensity.
+              </p>
+          </div>
+        </div>
+      </div>  
+      <div class="cardR">
+        <img class="imgWrapper" src="./images/ono-competitive-analysis.webp" alt="ono-competitive-analysis"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Sketching the prototype 
+              </h3>
+              <p>
+                One of the most important takeaways from my research was the need to approach users holistically, not just as patients. 
+              </p>
+              <p>
+                To acknowledge medication users within and beyond their diagnoses, I designed features that promoted a whole-person approach: a medication and mood tracker, an online forum for mental health discussions, and a knowledge base for psychoeducation.
+              </p>
+            </div>
+          </div>
+        </div>  
+      <div class="cardR">
+        <img class="imgWrapper" src="./images/ono-sketches.webp" alt="ono-sketches"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Digitizing the design                             
+              </h3>
+              <p>
+                I converted my sketches into a digital prototype, integrating features that addressed key pain points and user insights from my research.
+              </p>
+            </div>
+          </div>
+        </div>  
+        <div class="cardR">
+          <img class="imgWrapper" src="./images/ono-lo-fi.webp" alt="ono-lo-fi"/>
+        </div>
+    </section>
+    
+    <section>
+      <div class="row">
+        <div class="card3">
+            <div class="center">
+              <div class="header">
+                <h2>
+                  THE FINAL PRODUCT
+                </h2>
+                <h3>
+                  An app that allows users to dynamically measure medication use and mood... 
+                </h3>
+              </div>
+              <br>
+              <img class="feature" alt="ono-feature-1" src="./images/ono-feature-1.webp"/>
+              <div class="header">
+                <br>
+                <h3>
+                  ...connect anonymously with a safe community...
+                </h3>
+              </div>
+              <br>
+              <img class="feature" alt="ono-feature-2" src="./images/ono-feature-2.webp"/>
+              <div class="header">
+                <br>
+                <h3>
+                  ...and access educational content on mental health.
+                </h3>
+              </div>
+              <br>
+              <img  class="feature" alt="ono-feature-3" src="./images/ono-feature-3.webp"/>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+    
+    <section>
+      <div class="row">
+        <div class="briefBkg">
+            <div class="bottom">
+              <h2>
+                THANK YOU  
+              </h2>
+              <p>
+                If you're interested in collaborating, please contact me at<a href="mailto:annaphoenixg@gmail.com"> annaphoenixg@gmail.com </a>
+                <br>
+                <br>
+                Be well!
+              </p>
+              <img class="signature" src="./images/signature.webp" alt='signature'/>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <footer onload="getCurrentYear()"> © <span id="currentYear"></span> Anna Gombay | All rights reserved</footer>
+    </section>
+
+    <script>
+      // Get current year
+      function getCurrentYear() {
+        const currentDate = new Date();
+        return currentDate.getFullYear();
+      }
+    
+      // Update the current year in the footer
+      const currentYear = getCurrentYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    </script>
+
+  </body>
+</html>
