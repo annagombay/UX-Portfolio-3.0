@@ -25,6 +25,8 @@ function openDetailsPage(projectId) {
     projectDetailsFile = 'project-details2.html';
   } else if (projectId === 3) {
     projectDetailsFile = 'project-details3.html';
+  // } else if (projectId === 4) {
+  //   projectDetailsFile = 'project-details4.html';
   } else {
     // Handle invalid project ID
     console.error('Invalid project ID');
