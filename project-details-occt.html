@@ -1,0 +1,365 @@
+<!-- project-details.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <!-- Font: UDP Gothic / Corben / Roboto / Cedarville -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <!--Font: Cedarville -->
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <!--Font: DM Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WH2F8Q5S9V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WH2F8Q5S9V');
+</script>
+  
+  <body onload="typeText()" id="bkg">
+
+    <header>
+      <nav>
+        <h1 class="hiddenButton" id="typing-animation" alt="Hi, I'm Anna"></h1>
+      </nav>
+      <div class="socialLinks">
+        <img onclick="openEmail()" class="socialLink" src="./images/email.webp">
+        <img onclick="openGithub()" class="socialLink" src="./images/github.webp">
+        <img onclick="openLinkedIn()"class="socialLink" src="./images/linked-in.webp">
+      </div>
+    </header>
+
+    <div class="caseStudy">
+
+      <div class="buttonWrapper" id="web">
+        <button id="left" onclick="goHome()">HOME</button>
+        <button id="right" onclick="openDetailsPage(2)">NEXT</button>
+      </div>
+
+      <div class="buttonWrapper" id="mob">
+        <img id="leftHome" src="./images/home-button.webp" onclick="goHome()">
+        <img id="right" src="./images/forward-button.webp" onclick="openDetailsPage(2)">
+      </div>
+
+      <section>
+        <div class="topBkg"></div>
+        <div class="row">
+          <h1>
+            OURCANCERCARETOOLS
+          </h1>     
+        </div>
+        <div class="row">
+          <h2> 
+            Empowering personalized cancer care through risk prediction
+          </h2> 
+        </div>  
+      </section>
+
+      <section>
+        <div class="row">
+            <div class="hero">
+              <div class="col">
+                <div class="center">
+                  <img class="occtImage" src="./images/occt-hero.png" alt="occt-hero" />
+                </div>
+              </div>
+            </div> 
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="squeeze">
+            <div class="square">
+              <h2> 
+                Brief 
+              </h2>
+              <p> 
+                A website hosting risk calculators that predict life after a cancer diagnosis
+            </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Goal 
+              </h2>
+              <p> 
+                Empower people impacted by cancer with tailored information to help shape their cancer care
+              </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Roles 
+              </h2>
+              <p>
+                UX Researcher
+                <br>
+                UX Designer
+                <br>
+                Webflow Developer
+              </p>
+            </div>
+            <div class="square">
+              <h2> 
+                Tools 
+              </h2>
+              <p>
+                Figma
+                <br>
+                Webflow 
+              </p>
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">  
+                <h2>
+                  THE PROBLEM
+                </h2>
+                <h3> 
+                    Personal needs are underrepresented in cancer care
+                </h3>
+                <p>
+                    After a cancer diagnosis, survival is typically treated as the default goal.
+                </p>
+                <p>
+                    Some patients, however, prioritize quality of life over quantity of life—identity over longevity.
+                </p>
+                <p>
+                    When cancer care overlooks personal preferences, it can become misaligned with what matters most to individuals.
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <img class="imgWrapperWide" src="./images/oct-detective.webp" alt="oct-detective"/>
+          </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">  
+                <h2>
+                  DESIGNING A SOLUTION
+                </h2>
+                <h3> 
+                  Personalizing cancer care
+                </h3>
+                <p>
+                  OurCancerCareTools is an online hub that empowers cancer patients with personalized information to help inform their care choices.
+                <p> 
+                  Here, we leverage predictive algorithms to calculate risks around particular treatment decisions so patients can pursue options that align with their values.
+                </p>
+                <p> 
+                  Unlike many existing online tools that predict survival alone, our tools center around outcomes related to quality of life.  
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <img class="imgWrapperWide" src="./images/occt-calculators.png" alt="occt-calculators"/>
+          </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="center">
+              <div class="header">
+                <h2>
+                  BUILDING THE HUB
+                </h2>  
+                <h3> 
+                  Establishing design differentiators
+                </h3>
+                <p>
+                  Cancer risk calculators are widely available, which created a clear challenge from the onset: earning trust in a crowded landscape.
+                </p>
+                <p> 
+                  How could we ensure our platform was uniquely appealing to patients who have a sea of digital tools at their fingertips? 
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <div class="imgWrapper">
+                <img class="imgWrapperWide" src="./images/occt-SWOT.png" alt="occt-swot"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Setting a mood
+              </h3>
+              <p>
+                Blah
+              </p>
+            </div>
+          </div>
+        </div>  
+        <div class="cardR">
+          <img class="imgWrapperWide" src="./images/occt-moodboard.png" alt="occt-moodboard"/>
+        </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Prototyping concepts
+              </h3>
+              <p>
+                Blah 
+              </p>
+              <p>
+                Blah 
+              </p>
+              <p>
+                Blah
+              </p>
+          </div>
+        </div>
+      </div>  
+      <div class="cardR">
+        <img class="imgWrapperWide" src="./images/occt-concepts.png" alt="occt-concepts"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Polishing the design
+              </h3>
+              <p>
+                Blah
+              </p>
+              <p>
+                Bah
+              </p>
+            </div>
+          </div>
+        </div>  
+      <div class="cardR">
+        <img class="imgWrapperWide" src="./images/occt-polishing.png" alt="occt-polishing"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header">  
+              <h3> 
+                Coding in Webflow                           
+              </h3>
+              <p>
+                blah
+              </p>
+            </div>
+          </div>
+        </div>  
+        <div class="cardR">
+          <!-- <img class="imgWrapper" src="./images/ono-lo-fi.webp" alt="ono-lo-fi"/> -->
+        </div>
+    </section>
+    
+    <section>
+      <div class="row">
+        <div class="card3">
+            <div class="center">
+              <div class="header">
+                <h2>
+                  THE FINAL PRODUCT
+                </h2>
+                <h3>
+                  An app that allows users to dynamically measure medication use and mood... 
+                </h3>
+              </div>
+              <br>
+              <img class="occtFeature" alt="occt-website" src="./images/occt-website.png"/>
+              <div class="header">
+                <br>
+                <h3>
+                  ...connect anonymously with a safe community...
+                </h3>
+              </div>
+              <br>
+              <!-- <img class="feature" alt="ono-feature-2" src="./images/ono-feature-2.webp"/> -->
+              <div class="header">
+                <br>
+                <h3>
+                  ...and access educational content on mental health.
+                </h3>
+              </div>
+              <br>
+              <!-- <img  class="feature" alt="ono-feature-3" src="./images/ono-feature-3.webp"/> -->
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+    
+    <section>
+      <div class="row">
+        <div class="briefBkg">
+            <div class="bottom">
+              <h2>
+                THANK YOU  
+              </h2>
+              <p>
+                If you're interested in collaborating, please contact me at <a href="mailto:annaphoenixg@gmail.com">annaphoenixg@gmail.com </a>
+                <br>
+                <br>
+                Be well!
+              </p>
+              <img class="signature" src="./images/signature.webp" alt='signature'/>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <footer onload="getCurrentYear()"> © <span id="currentYear"></span> Anna Gombay | All rights reserved</footer>
+    </section>
+
+    <script>
+      // Get current year
+      function getCurrentYear() {
+        const currentDate = new Date();
+        return currentDate.getFullYear();
+      }
+    
+      // Update the current year in the footer
+      const currentYear = getCurrentYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    </script>
+
+  </body>
+</html>
