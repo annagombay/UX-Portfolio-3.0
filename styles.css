@@ -1036,15 +1036,19 @@ video {
       }
 
       /* NEW CLASSES */
-.card4 .header {
-  align-items: flex-start;
-  text-align: left;
-}
-.card4 .header p {
-  text-align: left;
-}
+      .card4 {
+        padding-left: 0rem;
+        padding-right: 0rem;
+      }
+      .card4 .header {
+        align-items: flex-start;
+        text-align: left;
+      }
+      .card4 .header p {
+        text-align: left;
+      }
       .card4 p {
-        width: 100vw;
+        width: 100%;
       }
       .card4 .header {
         align-items: left;
@@ -1059,7 +1063,6 @@ video {
         gap: 0rem; 
       }
       /* --- */
-
       
       .header h2 {
         max-width: 85vw;
@@ -1139,6 +1142,9 @@ video {
         font-size: 3.75rem;
         letter-spacing: 0.09rem;
         line-height: 3.9843749999999996rem;
+      }
+      #occt-title {
+        font-size: 3.5rem;
       }
       
     }
