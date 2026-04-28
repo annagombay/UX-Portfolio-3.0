@@ -41,7 +41,7 @@
 
       <div class="buttonWrapper" id="web">
         <button id="left" onclick="goHome()">HOME</button>
-        <button id="right" onclick="openDetailsPage(2)">NEXT</button>
+        <button id="right" onclick="openDetailsPage(1)">NEXT</button>
       </div>
 
       <div class="buttonWrapper" id="mob">
@@ -75,7 +75,7 @@
         </div>
       </section>
 
-      <section>
+      <!--<section>
         <div class="row">
           <div class="squeeze">
             <div class="square">
@@ -117,7 +117,7 @@
               </p>
             </div>
         </div>
-      </section>
+      </section> -->
 
       <section>
         <div class="row">
@@ -131,19 +131,16 @@
                     Personal needs are underrepresented in cancer care
                 </h3>
                 <p>
-                    After a cancer diagnosis, survival is typically treated as the default goal.
+                    After a cancer diagnosis, people don’t just question whether they’ll live—they question whether their life will still feel like their own. Will they be able to live independently after surgery? Will they recognize themselves after chemo? 
                 </p>
                 <p>
-                    Some patients, however, prioritize quality of life over quantity of life—identity over longevity.
-                </p>
-                <p>
-                    When cancer care overlooks personal preferences, it can become misaligned with what matters most to individuals.
+                    OurCancerCareTools answers questions that clinical conversations too often skip, using <b>predictive algorithms to calculate treatment risks</b> so patients can pursue care pathways aligned with their values.
                 </p>
               </div>
             </div>
           </div>  
           <div class="cardR">
-            <img class="imgWrapperWide" src="./images/oct-detective.webp" alt="oct-detective"/>
+            <img class="imgWrapper" src="./images/occt-garden-key.png" alt="occt-garden-key"/>
           </div>
       </section>
 
@@ -159,13 +156,22 @@
                   Personalizing cancer care
                 </h3>
                 <p>
-                  OurCancerCareTools is an online hub that empowers cancer patients with personalized information to help inform their care choices.
-                <p> 
-                  Here, we leverage predictive algorithms to calculate risks around particular treatment decisions so patients can pursue options that align with their values.
+                  With a team of oncologists, researchers, and data analysts at Sunnybrook Research Institute, I designed and built a website with risk calculators to empower personalized cancer care.
                 </p>
-                <p> 
-                  Unlike many existing online tools that predict survival alone, our tools center around outcomes related to quality of life.  
+                <p>
+                  The challenge was threefold:
                 </p>
+                <ul class="bulletList">
+                  <li>
+                    <b>handle emotionally loaded information with care</b>
+                  </li>
+                  <li>
+                    <b>serve three audiences whose needs frequently diverge</b>
+                  </li>
+                  <li>
+                    <b>stand out in a crowded landscape</b>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>  
@@ -180,23 +186,23 @@
             <div class="center">
               <div class="header">
                 <h2>
-                  BUILDING THE HUB
+                  MY ROLE
                 </h2>  
                 <h3> 
-                  Establishing design differentiators
+                  Bringing the hub to life
                 </h3>
                 <p>
-                  Cancer risk calculators are widely available, which created a clear challenge from the onset: earning trust in a crowded landscape.
+                  I led <b>design and front-end development end-to-end</b>—from visual concept to a coded, responsive build in Webflow—including integrating the predictive algorithm logic developed by the data team.
                 </p>
                 <p> 
-                  How could we ensure our platform was uniquely appealing to patients who have a sea of digital tools at their fingertips? 
+                  Key constraints included designing for users in acute emotional distress, meeting accessibility requirements across mobile, tablet, and desktop, and navigating decisions collaboratively with clinical and research stakeholders.
                 </p>
               </div>
             </div>
           </div>  
           <div class="cardR">
             <div class="imgWrapper">
-                <img class="imgWrapperWide" src="./images/occt-SWOT.png" alt="occt-swot"/>
+                <img class="imgWrapperWide" src="./images/occt-fingerprint.png" alt="occt-fingerprint"/>
             </div>
           </div>
         </div>
@@ -208,11 +214,26 @@
         <div class="cardL">
           <div class="center">
             <div class="header">  
+              <h2>
+                RESEARCH AND DISCOVERY
+              </h2>
               <h3> 
-                Setting a mood
+                Directing the design
               </h3>
               <p>
-                Blah
+                We built empathy maps for each user type, then tested assumptions through a feedback booth at Sunnybrook's cancer centre. We conducted competitive audits of existing tools and ran focus groups with 30+ prospective users.
+              </p>
+              <p>
+                Three insights fundamentally shaped the design direction:
+              </p>
+              <p>
+                <b>Emotional safety is a prerequisite for engagement.</b> Feedback on early moodboards revealed that tonal missteps could trigger feelings of unsafety before a user even reached the calculator. We infused every aspect of the design with compassion and togetherness. 
+              </p>
+              <p>
+                <b>Care partners are as affected as patients—sometimes more.</b> An instinct to centre the tool on the patient experience was overridden by overwhelming evidence that care partners are equally high-stakes users, carrying enormous emotional and logistical burden. Designing for them required equal consideration.
+              </p>
+              <p>
+                <b>Information overwhelm fuels avoidance.</b> People impacted by cancer consistently described drowning in paperwork, conflicting guidance, and dense clinical language. In overwhelming moments, a complex tool risks being abandoned entirely.
               </p>
             </div>
           </div>
@@ -224,48 +245,57 @@
 
     <section>
       <div class="row">
-        <div class="cardL">
-          <div class="center">
-            <div class="header">  
-              <h3> 
-                Prototyping concepts
-              </h3>
-              <p>
-                Blah 
-              </p>
-              <p>
-                Blah 
-              </p>
-              <p>
-                Blah
-              </p>
+        <div class="card4">
+            <div class="center">
+              <div class="header">
+                <h2>
+                  KEY DESIGN DECISIONS
+                </h2>
+                <h3> 
+                  Implementing insights
+                </h3>
+                <div class="card4Content">
+                  <p>
+                    <b>Embedding warmth as infrastructure</b><br>A sunrise-sunset gradient evokes continuous renewal, curved edges soften navigation, curated images depict togetherness and human-centered care. The design deliberately helps users feel safe enough to engage.
+                  </p>
+                  <p>
+                    <b>Building three distinct journeys</b><br> Branching logic adapts the experience to whoever is accessing the tool, ensuring users can answer questions accurately regardless of medical literacy and feel seen regardless of their role.
+                  </p>
+                  <p>
+                    <b>Leaving room to breathe</b><br> Calculator questions surface one at a time, and are organized into labelled sections on a progress indicator. A slow pace keeps users present instead of panicking while clearly communicating what's ahead.
+                  </p>
+                </div>
+              </div>
+              <br>
+              <video class="video" width="100%" controls autoplay muted loop>
+                <source src="images/occt-video-walkthrough.mp4" type="video/mp4">
+              </video>
           </div>
-        </div>
-      </div>  
-      <div class="cardR">
-        <img class="imgWrapperWide" src="./images/occt-concepts.png" alt="occt-concepts"/>
+        </div> 
       </div>
     </section>
 
-    <section>
+     <section>
       <div class="row">
         <div class="cardL">
           <div class="center">
             <div class="header">  
+              <h2>
+                OUTCOMES AND IMPACT
+              </h2>
               <h3> 
-                Polishing the design
+                How it's used
               </h3>
               <p>
-                Blah
-              </p>
+                Launched in January 2025, <a href="https://ourcancercaretools.ca">OurCancerCareTools</a> is a <b>live, publicly accessible platform currently used in clinical settings</b> to support real treatment conversations between patients and their care teams.</p>
               <p>
-                Bah
+                Formal beta testing is underway to inform the platform's next iteration, and additional calculators are in development.
               </p>
             </div>
           </div>
         </div>  
       <div class="cardR">
-        <img class="imgWrapperWide" src="./images/occt-polishing.png" alt="occt-polishing"/>
+        <img class="imgWrapperWide" src="./images/occt-hero-mini.png" alt="occt-hero-mini"/>
       </div>
     </section>
 
@@ -274,54 +304,52 @@
         <div class="cardL">
           <div class="center">
             <div class="header">  
+              <h2>
+                WHAT I’D DO DIFFERENTLY
+              </h2>
               <h3> 
-                Coding in Webflow                           
+                Alignment over ambition
               </h3>
               <p>
-                blah
+                The first prototype was built with a much broader scope, driven by ambition to give patients everything they might need. For example, it included features such as a buddy system, chat forums, and a map to nearby support.
+              </p>
+              <p>
+                In retrospect, <b>earlier and tighter alignment with clinical stakeholders around feasibility</b> would have shortened the time between that initial vision and the focused, buildable product we landed on. 
+              </p>
+            </div>
+          </div>
+        </div>  
+      <div class="cardR">
+        <img class="imgWrapperWide" src="./images/occt-features.png" alt="occt-features"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="center">
+            <div class="header"> 
+              <h2>
+                FINAL THOUGHTS
+              </h2> 
+              <h3> 
+                The privilege of amplifying voices                         
+              </h3>
+              <p>
+                This project allowed me to work to my strengths. <b>I care deeply about amplifying the voices of vulnerable people</b>, and much of my life in and out of design revolves around bringing comfort to others during challenging times.
+              </p>
+              <p>
+                What made this particularly demanding—and rewarding—was the complex empathy required to design for three types of people each carrying different weights: patients facing their own mortality, care partners shouldering invisible burdens, and clinicians navigating difficult conversations daily.
+              </p>
+              <p>
+                It's exactly the work I want to keep doing.
               </p>
             </div>
           </div>
         </div>  
         <div class="cardR">
-          <!-- <img class="imgWrapper" src="./images/ono-lo-fi.webp" alt="ono-lo-fi"/> -->
+          <img class="imgWrapper" src="./images/occt-voices.png" alt="occt-voices"/>
         </div>
-    </section>
-    
-    <section>
-      <div class="row">
-        <div class="card3">
-            <div class="center">
-              <div class="header">
-                <h2>
-                  THE FINAL PRODUCT
-                </h2>
-                <h3>
-                  An app that allows users to dynamically measure medication use and mood... 
-                </h3>
-              </div>
-              <br>
-              <img class="occtFeature" alt="occt-website" src="./images/occt-website.png"/>
-              <div class="header">
-                <br>
-                <h3>
-                  ...connect anonymously with a safe community...
-                </h3>
-              </div>
-              <br>
-              <!-- <img class="feature" alt="ono-feature-2" src="./images/ono-feature-2.webp"/> -->
-              <div class="header">
-                <br>
-                <h3>
-                  ...and access educational content on mental health.
-                </h3>
-              </div>
-              <br>
-              <!-- <img  class="feature" alt="ono-feature-3" src="./images/ono-feature-3.webp"/> -->
-            </div>
-          </div>
-        </div> 
-      </div>
     </section>
     
     <section>
