@@ -162,7 +162,9 @@ transform: scale(1.1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(./images/nav-image.webp);
+  /* background-image: url(./images/nav-image.webp); */
+  background-color: white;
+
   box-shadow: 0 .625rem 1.875rem rgba(76, 55, 208,.05);
   transition: box-shadow 0.3s ease;
   padding-bottom: 2rem;
@@ -378,10 +380,15 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.center {
+.flexLeft {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+.flexCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .header {
   display: flex;
@@ -430,11 +437,11 @@ footer {
 /* NEW CLASS */
 .header li {
   line-height: 1rem;
-
 }
 /* NEW CLASS */
 .bulletList {
-  padding-left: 1.25rem;
+  padding-left: 0;
+  list-style-position: inside;
   margin: 0;
 }
 .mockup4 {
@@ -490,7 +497,8 @@ footer {
   justify-content: flex-start;
   text-align: center;
   width: 17vw;
-  background-image: url(./images/nav-image.webp);
+  /* background-image: url(./images/nav-image.webp); */
+  background-color: white;
   object-fit: cover;
   border: .15rem solid #C2EDF4;
   border-radius: 1rem;
@@ -584,7 +592,8 @@ footer {
   z-index: 5;
   border: .15rem solid #C2EDF4;
   border-radius: 1rem;
-  background-image: url(./images/nav-image.webp);
+  /* background-image: url(./images/nav-image.webp); */
+  background-color: white;
 }
 .card3 h2 {
   width: fit-content;
@@ -842,10 +851,10 @@ sup {
   }
 }
 
-video {
+/* video {
   width: 100%;
   height: auto;
-}
+} */
 
 /* Media Queries */
 
@@ -965,7 +974,6 @@ video {
       display: none;
     }
   }
-
     @media (max-width: 652px) {
       nav {
         font-size: 1.2rem;
@@ -1034,7 +1042,6 @@ video {
         width: 90vw;
         padding: 1rem;
       }
-
       /* NEW CLASSES */
       .card4 {
         padding-left: 0rem;
@@ -1063,7 +1070,6 @@ video {
         gap: 0rem; 
       }
       /* --- */
-      
       .header h2 {
         max-width: 85vw;
       }
@@ -1109,9 +1115,9 @@ video {
       .buttonWrapper img {
         width: 12vw;
       }
-      video {
+      /* video {
         width: 90vw;
-      }
+      } */
       #text-shrink {
         font-size: 3rem;
         letter-spacing: 0.01953125rem;
