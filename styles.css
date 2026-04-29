@@ -5,7 +5,6 @@ body, html {
   padding: 0;
   padding-top: 2.3rem;
   background-image: url(./images/background-image.webp);
-  /* background-image: url(./images/background-image2.webp); */
   background-position: center;
   background-size: cover;
 }
@@ -609,7 +608,7 @@ footer {
 
 /* NEW CLASSES */
 .card4 {
-  width: 100%;
+  width: 92%;
   flex-direction: row;
   height: fit-content;
   display: flex;
@@ -1045,9 +1044,14 @@ sup {
       }
       /* NEW CLASSES */
       .card4 {
+        width: 100%;
         padding-left: 0rem;
         padding-right: 0rem;
       }
+
+    .video {
+      width: 90%;
+    }
       .card4 .header {
         align-items: flex-start;
         text-align: left;
