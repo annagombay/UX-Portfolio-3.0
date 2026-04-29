@@ -662,6 +662,11 @@ footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+figcaption {
+  font-family: 'Roboto', sans-serif;
+  color: #667085;
+  margin-top: -1rem;
+}
 .feature {
   width: 87.261vw;
   height: 48.28vw;
@@ -1037,6 +1042,9 @@ sup {
       .cardR img {
         width: 100%;
         height: auto;
+      }
+      figcaption {
+        margin-top: 0rem;
       }
       .card3 {
         width: 90vw;
