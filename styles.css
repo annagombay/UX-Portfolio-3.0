@@ -32,10 +32,11 @@ header {
 }
 nav {
   display: flex;
+  flex: 1;
+  min-width: 0;
   font-family: 'Cedarville Cursive', cursive;
   font-size: 1.2rem;
   letter-spacing: .02rem;
-  line-height: 6vh;
   color: #2F2E41;
 }
 nav h1 {
@@ -45,9 +46,6 @@ nav h1:hover {
   cursor: pointer;
 }
 .hiddenButton {
-  flex: 1;
-  min-width: 0;
-  height: 6vh;
   z-index: 1000;
   cursor: pointer;
   background-position: center;
@@ -962,7 +960,7 @@ sup {
   }
     @media (max-width: 652px) {
       nav {
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding-left:.2rem;
       }
       .socialLink{
