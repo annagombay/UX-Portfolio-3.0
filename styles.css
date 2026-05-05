@@ -26,6 +26,7 @@ header {
 }
 nav {
   display: flex;
+  /* justify-content: space-between; */
   font-family: 'Cedarville Cursive', cursive;
   font-size: 1.2rem;
   letter-spacing: .02rem;
@@ -870,7 +871,6 @@ sup {
       position: absolute;
       bottom: 2vh;
       border-top: 100vh solid #562CD8;
-
     }
     .heroImage img {
       width: 100vw;
@@ -902,7 +902,7 @@ sup {
       width: 95vw;
       justify-content: center;
       text-align: center;
-      color: #C2EDF4;
+      color: #ffffff;
     }
     #no-show {
       display: none;
@@ -978,6 +978,10 @@ sup {
     #web {
       display: none;
     }
+    #blue {
+        color: #C2EDF4;
+    }
+    
   }
     @media (max-width: 652px) {
       nav {
@@ -1007,11 +1011,11 @@ sup {
         max-width: 85vw;
       }
       .landingContent {
-        margin-top: -45vh;
+        margin-top: -30vh;
       }
-      #blue {
+      /* #blue {
         color: #C2EDF4;
-      }
+      } */
       .row {
         flex-direction: column;
         justify-content: center;
