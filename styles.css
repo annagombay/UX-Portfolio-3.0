@@ -55,17 +55,14 @@ nav h1:hover {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 0.2rem;
+  gap: 0.5rem;
 }
-
 .socialLinks img {
-  height: 6vh;
+  height: 3.2rem;
   width: auto;
 }
-
 .socialLink{
   cursor:pointer;
-  padding-left:.5rem;
   z-index:5;
 }
 
@@ -963,8 +960,8 @@ sup {
         font-size: 1rem;
         padding-left:.2rem;
       }
-      .socialLink{
-        padding-left:.2rem;
+      .socialLinks img {
+        height: 2.2rem;
       }
       .squeeze {
         margin-top: .7rem;
@@ -1096,9 +1093,6 @@ sup {
       .buttonWrapper img {
         width: 12vw;
       }
-      /* video {
-        width: 90vw;
-      } */
       #text-shrink {
         font-size: 3rem;
         letter-spacing: 0.01953125rem;
@@ -1106,7 +1100,6 @@ sup {
       }
       .imgWrapperWide {
         width: 90vw;
-        /* height: fit-content; */
       }
       .bottom p {
         max-width: 85vw;
