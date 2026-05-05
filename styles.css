@@ -23,6 +23,12 @@ header {
   background-size: cover;
   box-shadow: 0 .625rem 1.875rem rgba(76, 55, 208,.1);
   z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2vw;
+  padding-right: 1vw;
+  box-sizing: border-box;
 }
 nav {
   display: flex;
@@ -32,7 +38,7 @@ nav {
   letter-spacing: .02rem;
   line-height: 8vh;
   color: #2F2E41;
-  margin-left: 2vw;
+  /* margin-left: 2vw; */
 }
 nav h1 {
   margin: 0;
@@ -41,28 +47,36 @@ nav h1:hover {
   cursor: pointer;
 }
 .hiddenButton {
-  width: 50vw;
+  /* width: 50vw; */
   height: 8vh;
   z-index: 1000;
   cursor: pointer;
   background-position: center;
 }
 .socialLinks{
-  width: 100vw;
-  height: 8vh;
-  position: relative;
+  /* width: 100vw; */
+  /* height: 8vh; */
+  /* position: relative; */
   background-image: none;
   display: flex;
   justify-content: flex-end;
-  margin-top: -8vh;
-  margin-left: -2vw;
+  align-items: center;
+  gap: 0.5rem;
+  /* margin-top: -8vh; */
+  /* margin-left: -2vw; */
 }
+
+.socialLinks img {
+  height: 6vh;
+  width: auto;
+}
+
 .socialLink{
   cursor:pointer;
   padding-left:.5rem;
-  position:relative;
-  top: 50%;
-  transform: translatey(-50%);
+  /* position:relative; */
+  /* top: 50%; */
+  /* transform: translatey(-50%); */
   z-index:5;
 }
 
@@ -988,14 +1002,14 @@ sup {
         font-size: 1.2rem;
         padding-left:.2rem;
       }
-      .hiddenButton {
+      /* .hiddenButton {
         width: 55vw;
-      }
-      .socialLinks{
+      } */
+      /* .socialLinks{
         width: 100vw;
         height: 6vh;
         margin-top: -7vh;
-      }
+      } */
       .socialLink{
         padding-left:.2rem;
       }
