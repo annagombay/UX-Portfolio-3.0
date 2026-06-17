@@ -1,0 +1,294 @@
+<!-- project-details.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <!-- Font: UDP Gothic / Corben / Roboto / Cedarville -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <!--Font: Cedarville -->
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <!--Font: DM Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WH2F8Q5S9V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WH2F8Q5S9V');
+</script>
+  
+  <body onload="typeText()" id="bkg">
+
+    <header>
+      <button class="hamburger" onclick="toggleNav()" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <nav class="navLinks">
+      <button class="navBtn" onclick="goHome(); closeNav()">Home</button>
+      <button class="navBtn uxProjectsBtn" onclick="scrollToProjects(); closeNav()">Projects</button>
+      <button class="navBtn" onclick="scrollToAbout(); closeNav()">About</button>
+    </nav>
+
+    <div class="caseStudy">
+
+      <div class="buttonWrapper" id="web">
+        <button id="left" onclick="openDetailsPage(4)">BACK</button>
+        <button id="right" onclick="openDetailsPage(2)">NEXT</button>
+      </div>
+
+      <div class="buttonWrapper" id="mob">
+        <img id="left" src="./images/back-button.webp" onclick="openDetailsPage(4)">
+        <img id="right" src="./images/forward-button.webp" onclick="openDetailsPage(2)">
+      </div>
+
+      <section>
+        <div class="topBkg"></div>
+        <div class="row heroTitleRow">
+          <h1>
+            OK NOT OK
+          </h1>
+        </div>
+        <div class="row heroSubRow">
+          <h2>
+            Mind your medication
+          </h2>
+        </div>
+        <div class="row">
+          <p class="caseStudyDescription">A mood tracking app to understand the impact of psychiatric medication</p>
+        </div>
+      </section>
+
+      <section class="heroSection">
+        <div class="row">
+            <div class="hero">
+              <div class="col">
+                <div class="flexLeft">
+                    <img class="occtImage" src="./images/ono-hero.svg" alt="ono-hero" />
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <br>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="flexLeft">
+              <div class="header">  
+                <h2>
+                  THE PROBLEM
+                </h2>
+                <h3>
+                  The impact of psychiatric medication is inadequately measured
+                </h3>
+                <p>
+                It's difficult to predict how a psychiatric medication will affect any particular person. 
+                </p>
+                <p>
+                Doctors rely on what <b>patients self-report—often from memory, weeks apart</b>—leaving both sides without the detailed picture needed to find the right treatment.                
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <figure>
+              <img class="imgWrapper" src="./images/ono-searching.png" alt="ono-searching"/>
+              <figcaption>Illustration by <a href="https://www.tomektuz.pl/">Tomek Tuz</a></figcaption>
+            </figure>
+          </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="flexLeft">
+              <div class="header">  
+                <h2>
+                  DESIGNING A SOLUTION
+                </h2>
+                <h3>
+                  Tracking medication and mood
+                </h3>
+                <p>
+                  To <b>give patients and doctors better data</b>, I designed a mobile app to track the relationship between psychiatric medication and mood</b> over time.
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <img class="imgWrapper" src="./images/ono-app.svg" alt="ono-app"/>
+          </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="flexLeft">
+              <div class="header">
+                <h2>
+                  RESEARCH AND DISCOVERY
+                </h2>
+                <h3>
+                  What shaped the design
+                </h3>
+                <p>
+                  I interviewed five people who had been taking psychiatric medication daily for at least six months, built personas to represent different user experiences, mapped findings across wants, needs, and pain points, and audited competitor apps to identify gaps.
+                </p>
+                <p>
+                  Everything pointed towards a whole person approach—<b>considering not just the diagnosis, but the life around it.</b> Early sketches reflected that: community forums, journaling, knowledge bases, features for every corner of mental health.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cardR">
+            <img class="imgWrapperWide" src="./images/ono-research.png" alt="ono-research"/>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="flexLeft">
+              <div class="header">
+                <h2>
+                  CONTEMPLATING AND REFINING
+                </h2>
+                <h3>
+                  Zeroing in on a concept
+                </h3>
+                <p>
+                  Eventually I realized my early concepts were too literal, and research pointed to something simpler—<b>if the right medication can change someone’s life, maybe the most humanizing thing an app can do is help them find it.</b>
+                </p>
+                <p>
+                  To get to the core of the problem, I narrowed the scope to a medication and mood tracker and let go of ideas that would complicate the design. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cardR">
+            <img class="imgWrapperWide" src="./images/ono-features.svg" alt="ono-research"/>
+          </div>
+        </div>
+      </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="flexLeft">
+            <div class="header">
+              <h2>
+                FINDING THE GAP
+              </h2>
+              <h3>
+                Where existing apps fall short
+              </h3>
+              <p>
+                With a focus established, I explored how existing apps were measuring medication and mood. Two specific issues stood out:
+              </p>
+              <p>
+                <b>Mood is reduced to a single axis.</b> Most trackers ask users to rate how good or bad they feel, flattening the full complexity of emotional experiences to a 5 or 7 point scale.
+              </p>
+              <p>
+                <b>Mood data isn't linked to specific medications. </b>Mood tracking and medication tracking tend to exist as separate tools. When apps do link experiences with medication, it's usually for symptoms related to physical conditions, not mental. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cardR">
+          <img class="imgWrapper" src="./images/ono-comp-an.png" alt="ono-comp-an"/>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="card4">
+          <div class="flexCenter">
+            <div class="header">
+              <h2>
+                THE FINAL PRODUCT
+              </h2>
+              <h3>
+                Mood data done differently
+              </h3>
+              <p class="paragraphLong">
+                The final result is a dedicated tracker for psychiatric medication and mood. Unlike other apps, it captures a rich range of emotional states, and connects each mood entry to a specific medication.
+              </p>
+              <!-- <br> -->
+              <div class="card4Content2">
+                <p>
+                  <b>Capture multi-dimensional moods</b><br>Two axes exist to capture mood tone and energy. A curated set of mood descriptors appear based on user input, helping people narrow down exactly how they're feeling.
+                </p>
+                <p>
+                  <b>Pinpoint mood by medication</b><br>Each mood entry is tagged to the medications a user is taking that day. Over time, users can view their mood history across all medications—or filter down to a specific one—to understand its precise impact.
+                </p>
+              </div>
+            </div>
+            <br>
+            <img class="imgWrapperWidest" src="./images/ono-mood-scale.svg" alt="ono-mood-scale"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+          <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="flexLeft">
+              <div class="header">  
+                <h2>
+                  REFLECTION
+                </h2>
+                <h3>
+                  Why tools like this matter
+                </h3>
+                <p>
+                 <b>Mental health treatment is, in many ways, still guesswork.</b> 
+                </p>
+                <p>
+                  Psychiatric medication is prescribed, adjusted, and sometimes abandoned based on conversations that rely on a patient's ability to remember how they’ve felt and put it into words accurately.
+                </p>
+                <p>
+                  Tools like this empower patients to understand the impact of their treatment and navigate towards what truly works.
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <figure>
+              <img class="imgWrapper" src="./images/ono-north-star.png" alt="ono-north-star"/>
+              <figcaption>Illustration by <a href="https://www.behance.net/flonh">Florent Hauchard</a></figcaption>
+            </figure>
+          </div>
+      </section>
+
+    <section>
+      <footer onload="getCurrentYear()"> © <span id="currentYear"></span> Anna Gombay | All rights reserved</footer>
+    </section>
+
+    <script>
+      // Get current year
+      function getCurrentYear() {
+        const currentDate = new Date();
+        return currentDate.getFullYear();
+      }
+    
+      // Update the current year in the footer
+      const currentYear = getCurrentYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    </script>
+
+  </body>
+</html>

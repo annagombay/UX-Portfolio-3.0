@@ -10,14 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    <!-- Font: UDP Gothic / Corben / Roboto / Cedarville -->
+    <!-- Fonts: DM Sans (headings), Figtree (body + UI) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
-    <!--Font: Cedarville -->
-    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
-    <!--Font: DM Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <!-- Icons: Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Animation: Rive on hero image -->
+    <script src="https://unpkg.com/@rive-app/webgl2"></script>
   </head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WH2F8Q5S9V"></script>
@@ -29,30 +30,36 @@
   gtag('config', 'G-WH2F8Q5S9V');
 </script>
   
-  <body onload="typeText()">
+  <body>
     <header>
-      <nav>
-        <h1 class="hiddenButton" id="typing-animation" alt="Hi, I'm Anna"></h1>
-      </nav>
-      <div class="socialLinks">
-        <img onclick="openEmail()" class="socialLink" src="./images/email.webp">
-        <img onclick="openGithub()" class="socialLink" src="./images/github.webp">
-        <img onclick="openLinkedIn()"class="socialLink" src="./images/linked-in.webp">
-      </div>
+      <button class="hamburger" onclick="toggleNav()" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
+    <nav class="navLinks">
+      <button class="navBtn" onclick="goHome(); closeNav()">Home</button>
+      <button class="navBtn uxProjectsBtn" onclick="scrollToProjects(); closeNav()">Projects</button>
+      <button class="navBtn" onclick="scrollToAbout(); closeNav()">About</button>
+    </nav>
 
     <section class="landingPage">
       <div class="landingContent">
-          <h1>I'm a <span id="blue">UX Designer</span> building bridges between people and products</h1>
-          <button class="seeProjectsBtn" onclick="scrollToProjects()">See Projects</button>
-      </div>
-      <div class="heroImage">
-        <img src="./images/hero-img.webp" alt="hero-img">
+          <h1>Designing moments that <span style="white-space: nowrap"><span class="jiggle-letter" style="animation-delay:0.9s">m</span><span class="jiggle-letter" style="animation-delay:0.8s">o</span><span class="jiggle-letter" style="animation-delay:0.7s">v</span><span class="jiggle-letter" style="animation-delay:0.6s">e</span></span> <span style="white-space: nowrap"><span class="jiggle-letter" style="animation-delay:0.5s">p</span><span class="jiggle-letter" style="animation-delay:0.4s">e</span><span class="jiggle-letter" style="animation-delay:0.3s">o</span><span class="jiggle-letter" style="animation-delay:0.2s">p</span><span class="jiggle-letter" style="animation-delay:0.1s">l</span><span class="jiggle-letter" style="animation-delay:0.0s">e</span></span></h1>
+          <p class="heroSubheading">UX designer building products that lead to a healthier life</p>
+          <button class="seeProjectsBtn" onclick="scrollToProjects()">Explore Projects</button>
       </div>
       
+      <div class="heroImage">
+        <canvas id="rive-canvas"></canvas>
+      </div>
     </section>
 
     <main id="projects" role="main">
+      
+      <h2 class="sectionHeader">Projects</h2>
+      
       <section class="projectSection">
 
         <div class="project">
@@ -60,10 +67,12 @@
             <h2>OUR CANCER CARE TOOLS</h2>
           </div>
           <div class="subTitle">
-            <h3>A website empowering personalized cancer care through risk prediction </h3>
+            <h3>A clinical decision tool helping cancer patients understand treatment risks</h3>
           </div>
-          <img src="./images/occt-project-hero.webp" alt="occt-project">
-          <button onclick="openDetailsPage(4)">View Project</button>
+          <!-- <img src="./images/occt-project-hero.webp" alt="occt-project"> -->
+          <img src="./images/occt-project.png" alt="occt-project">
+           
+          <button onclick="openDetailsPage(4)">View project</button>
         </div>
 
         <div class="project">
@@ -71,10 +80,10 @@
               <h2>OK NOT OK</h2>
           </div>
           <div class="subTitle">
-            <h3>An app measuring the relationship between medication and mood</h3>
+            <h3>A mood tracking app to understand the impact of psychiatric medication</h3>
           </div>
           <img src="./images/ono-project.webp" alt="ono-project">
-          <button onclick="openDetailsPage(1)">View Project</button>
+          <button onclick="openDetailsPage(1)">View project</button>
         </div>
 
         <div class="project">
@@ -82,23 +91,42 @@
             <h2>CHATRBOT</h2>
           </div>
           <div class="subTitle">
-            <h3>A spoken word journal to challenge unhelpful self-talk</h3>
+            <h3>A spoken word journal creating a safe space for anxious thinkers</h3>
           </div>
           <img src="./images/cb-project.webp" alt="cb-project">
-          <button onclick="openDetailsPage(2)">View Project</button>
+          <button onclick="openDetailsPage(2)">View project</button>
         </div>
 
-        <div class="project" id="esr">
+        <div class="project">
           <div class="title">
             <h2>EAT SLEEP RIDE</h2>
           </div>
           <div class="subTitle">
-            <h3>A user-centric website redesign for a motorcycling startup</h3>
+            <h3>A website encouraging motorcyclists to twist and go</h3>
           </div>
-            <img src="./images/esr-project.webp" alt="esr-project">
-          <button onclick="openDetailsPage(3)">View Project</button>
+            <img src="./images/esr-img.png" alt="esr-project">
+          <button onclick="openDetailsPage(3)">View project</button>
         </div>
 
+      </section>
+      
+      <section class="aboutSection" id="about">
+        
+        <div class="bio">
+          <h2 class="sectionHeader">About</h2>
+          <p> 
+            I've always been drawn to the way words, colours, and the subtleties of timing and placement can affect people. I studied psychology because I wanted to help others, and I learned design and computer programming so I could. Now, I create digital products supporting health and wellbeing.
+          </p>
+          <div class="socialLinks">
+            <i onclick="openEmail()" class="socialLink fa-solid fa-envelope"></i>
+            <i onclick="openGithub()" class="socialLink fa-brands fa-github"></i>
+            <i onclick="openLinkedIn()" class="socialLink fa-brands fa-linkedin"></i>
+          </div>
+
+        </div>
+        
+        <img src="./images/AnnaBio.png" alt="AnnaBio">
+      
       </section>
 
       <section>
@@ -118,6 +146,48 @@
       </script>
       
     </main>
+
+<script>
+  const riveCanvas = document.getElementById("rive-canvas");
+
+  function sizeCanvas() {
+    const container = riveCanvas.parentElement;
+    riveCanvas.style.width = container.clientWidth + "px";
+    riveCanvas.style.height = container.clientHeight + "px";
+  }
+
+  // Set CSS dimensions before Rive initializes; resizeDrawingSurfaceToCanvas handles DPR internally
+  sizeCanvas();
+
+  const r = new rive.Rive({
+    src: "images/parting-of-the-sensory.riv",
+    canvas: riveCanvas,
+    autoplay: true,
+    animations: "Timeline 1",
+    layout: new rive.Layout({ fit: rive.Fit.Contain, alignment: rive.Alignment.Center }),
+    onLoad: () => {
+      r.resizeDrawingSurfaceToCanvas();
+    },
+    onLoop: () => {
+      r.pause();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    sizeCanvas();
+    r.resizeDrawingSurfaceToCanvas();
+  });
+
+  // Re-render at higher resolution when browser zoom changes devicePixelRatio
+  let lastDpr = window.devicePixelRatio;
+  window.matchMedia(`(resolution: ${lastDpr}dppx)`).addEventListener("change", function onDprChange() {
+    sizeCanvas();
+    r.resizeDrawingSurfaceToCanvas();
+    lastDpr = window.devicePixelRatio;
+    window.matchMedia(`(resolution: ${lastDpr}dppx)`).addEventListener("change", onDprChange, { once: true });
+  }, { once: true });
+
+</script>
     
   </body>
 </html>

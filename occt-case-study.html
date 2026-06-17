@@ -1,0 +1,340 @@
+<!-- project-details.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <!-- Font: UDP Gothic / Corben / Roboto / Cedarville -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <!--Font: Cedarville -->
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <!--Font: DM Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Font: Figtree -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WH2F8Q5S9V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WH2F8Q5S9V');
+</script>
+  
+  <body onload="typeText()" id="bkg">
+
+    <header>
+      <button class="hamburger" onclick="toggleNav()" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <nav class="navLinks">
+      <button class="navBtn" onclick="goHome(); closeNav()">Home</button>
+      <button class="navBtn uxProjectsBtn" onclick="scrollToProjects(); closeNav()">Projects</button>
+      <button class="navBtn" onclick="scrollToAbout(); closeNav()">About</button>
+    </nav>
+
+    <div class="caseStudy">
+
+      <div class="buttonWrapper" id="web">
+        <button id="left" onclick="goHome()">HOME</button>
+        <button id="right" onclick="openDetailsPage(1)">NEXT</button>
+      </div>
+
+      <div class="buttonWrapper" id="mob">
+        <img id="leftHome" src="./images/home-button.webp" onclick="goHome()">
+        <img id="right" src="./images/forward-button.webp" onclick="openDetailsPage(1)">
+      </div>
+
+      <section>
+
+        <div class="row heroTitleRow">
+          <h1>
+            OUR CANCER CARE TOOLS
+          </h1>
+        </div>
+        <div class="row heroSubRow">
+          <h2>
+            Personalized cancer care
+          </h2>
+        </div>
+        <div class="row">
+          <p class="caseStudyDescription">A clinical decision tool helping cancer patients understand treatment risks</p>
+        </div>
+      </section>
+
+      <section class="heroSection">
+        <div class="row">
+            <div class="hero">
+              <div class="col">
+                <div class="flexLeft">
+                  <img class="occtImage" src="./images/occt-hero.webp" alt="occt-hero" />
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="flexLeft">
+              <div class="header">  
+                <h2>
+                  THE PROBLEM
+                </h2>
+                <h3> 
+                    Personal needs are underrepresented in cancer care
+                </h3>
+                <p>
+                    After a cancer diagnosis, people don’t just question whether they’ll live—they question whether their life will still feel like their own. Will they be able to live independently after surgery? Will they recognize themselves after chemotherapy?
+                </p>
+                <p>
+                    OurCancerCareTools answers questions that clinical conversations too often skip, using <b>predictive algorithms to calculate treatment risks</b> so patients can pursue care pathways aligned with their values.
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <!-- <img class="imgWrapper" src="./images/occt-garden-key.webp" alt="occt-garden-key"/> -->
+             <figure>
+              <img class="imgWrapper" src="./images/occt-garden-key.webp" alt="occt-garden-key"/>
+              <figcaption>Illustration by <a href="https://ashleyjihye.com/">Ashley Jihye</a></figcaption>
+            </figure>
+          </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="flexLeft">
+              <div class="header">  
+                <h2>
+                  DESIGNING A SOLUTION
+                </h2>
+                <h3> 
+                  Personalizing cancer care
+                </h3>
+                <p>
+                  With a team of oncologists, researchers, and data analysts at Sunnybrook Research Institute, I designed and built a website with risk calculators to empower personalized cancer care.
+                </p>
+                <p>
+                  The challenge was threefold:
+                </p>
+                <ul class="bulletList">
+                  <li>
+                    <b>handle emotionally loaded information with care</b>
+                  </li>
+                  <li>
+                    <b>serve three audiences whose needs diverge</b>
+                  </li>
+                  <li>
+                    <b>stand out in a crowded landscape</b>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <img class="imgWrapperWide" src="./images/occt-calculators.webp" alt="occt-calculators"/>
+          </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="flexLeft">
+              <div class="header">
+                <h2>
+                  MY ROLE
+                </h2>  
+                <h3> 
+                  Bringing the hub to life
+                </h3>
+                <p>
+                  I led <b>design and front-end development end-to-end</b>—from visual concept to a coded, responsive build in Webflow—including integrating the predictive algorithm logic developed by the data team.
+                </p>
+                <p>
+                  Key constraints included designing for users in acute emotional distress, meeting accessibility requirements across mobile, tablet, and desktop, and navigating decisions collaboratively with clinical and research stakeholders.
+                </p>
+              </div>
+            </div>
+          </div>  
+          <div class="cardR">
+            <div class="imgWrapper">
+                <img class="imgWrapperWide" src="./images/occt-fingerprint.webp" alt="occt-fingerprint"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="cardL">
+            <div class="flexLeft">
+              <div class="header">
+                <h2>
+                  RESEARCH AND DISCOVERY
+              </h2>
+              <h3> 
+                Directing the design
+              </h3>
+              <p>
+                We built empathy maps for each user type, then tested assumptions through a feedback booth at Sunnybrook's cancer centre. We conducted competitive audits of existing tools and ran focus groups with 30+ prospective users.
+                  </p>
+                  <p>
+                Three insights fundamentally shaped the design direction:
+                  </p>
+                  <p>
+                <b>Emotional safety is a prerequisite for engagement.</b> Feedback on early moodboards revealed that tonal missteps could trigger feelings of unsafety before a user even reached the calculator. We infused every aspect of the design with compassion and togetherness. 
+                  </p>
+                  <p>
+                <b>Care partners are as affected as patients—sometimes more.</b> An instinct to centre the tool on the patient experience was overridden by overwhelming evidence that care partners are equally high-stakes users, carrying enormous emotional and logistical burden. Designing for them required equal consideration.
+                  </p>
+                  <p>
+                <b>Information overwhelm fuels avoidance.</b> People impacted by cancer consistently described drowning in paperwork, conflicting guidance, and dense clinical language. In overwhelming moments, a complex tool risks being abandoned entirely.
+              </p>
+            </div>
+          </div>
+        </div>  
+        <div class="cardR">
+          <img class="imgWrapperWide" src="./images/occt-moodboard.webp" alt="occt-moodboard"/>
+        </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="card4">
+            <div class="flexCenter">
+              <div class="header">
+                <h2>
+                  KEY DESIGN DECISIONS
+                </h2>
+                <h3> 
+                  Implementing insights
+                </h3>
+                <div class="card4Content">
+                  <p>
+                    <b>Embedding warmth as infrastructure</b><br>A sunrise-sunset gradient evokes continuous renewal, curved edges soften navigation, curated images depict togetherness and human-centered care. The design deliberately helps users feel safe enough to engage.
+                  </p>
+                  <p>
+                    <b>Building three distinct journeys</b><br> Branching logic adapts the experience to whoever is accessing the tool, ensuring users can answer questions accurately regardless of medical literacy and feel seen regardless of their role.
+                  </p>
+                  <p>
+                    <b>Leaving room to breathe</b><br> Calculator questions surface one at a time, and are organized into labelled sections on a progress indicator. A slow pace keeps users present instead of panicking while clearly communicating what's ahead.
+                  </p>
+                </div>
+              </div>
+              <br>
+              <video class="video" width="100%" controls autoplay muted loop>
+                <source src="images/occt-video-walkthrough.mp4" type="video/mp4">
+              </video>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+     <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="flexLeft">
+            <div class="header">  
+              <h2>
+                OUTCOMES AND IMPACT
+              </h2>
+              <h3> 
+                How it's used
+              </h3>
+              <p>
+                Launched in January 2025, <a href="https://ourcancercaretools.ca">OurCancerCareTools</a> is a <b>live, publicly accessible platform currently used in clinical settings</b> to support real treatment conversations between patients and their care teams.</p>
+            </div>
+          </div>
+        </div>  
+      <div class="cardR">
+        <img class="imgWrapperWide" src="./images/occt-hero-mini.webp" alt="occt-hero-mini"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="flexLeft">
+            <div class="header">  
+              <h2>
+                WHAT I’D DO DIFFERENTLY
+              </h2>
+              <h3> 
+                Alignment over ambition
+              </h3>
+              <p>
+                The first prototype was built with a much broader scope, driven by ambition to give users everything they might need. For example, it included features such as a buddy system, chat forums, and a map to nearby support.
+                </p>
+                <p>
+                In retrospect, <b>earlier and tighter alignment with clinical stakeholders around feasibility</b> would have shortened the time between that initial vision and the focused, buildable product we landed on. 
+              </p>
+            </div>
+          </div>
+        </div>  
+      <div class="cardR">
+        <img class="imgWrapperWide" src="./images/occt-features.webp" alt="occt-features"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="cardL">
+          <div class="flexLeft">
+            <div class="header"> 
+              <h2>
+                FINAL THOUGHTS
+              </h2> 
+              <h3> 
+                The privilege of amplifying voices                         
+              </h3>
+              <p>
+                This project allowed me to work to my strengths. <b>I care deeply about amplifying the voices of vulnerable people</b>, and much of my life in and out of design revolves around bringing comfort to others during challenging times.
+                  <br>
+                  <br>
+                What made this particularly demanding—and rewarding—was the complex empathy required to design for three types of people each carrying different weights: patients facing their own mortality, care partners shouldering invisible burdens, and clinicians navigating difficult conversations daily.
+                  <br>
+                  <br>
+                It's exactly the work I want to keep doing.
+              </p>
+            </div>
+          </div>
+        </div>  
+        <div class="cardR">
+          <img class="imgWrapper" src="./images/occt-voices.webp" alt="occt-voices"/>
+        </div>
+        <br>
+        <br>
+    </section>
+
+    <section>
+      <footer onload="getCurrentYear()"> © <span id="currentYear"></span> Anna Gombay | All rights reserved</footer>
+    </section>
+
+    <script>
+      // Get current year
+      function getCurrentYear() {
+        const currentDate = new Date();
+        return currentDate.getFullYear();
+      }
+    
+      // Update the current year in the footer
+      const currentYear = getCurrentYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    </script>
+
+  </body>
+</html>

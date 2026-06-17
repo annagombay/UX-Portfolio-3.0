@@ -1,18 +1,46 @@
 
-// Smooth scroll to projects section
-function scrollToProjects() {
-  const projectsSection = document.getElementById('projects');
-  projectsSection.scrollIntoView({ behavior: 'smooth' });
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+  if (!section) {
+    window.location.href = 'index.html#' + id;
+    return;
+  }
+  const navHeight = document.querySelector('header').offsetHeight;
+  const top = section.getBoundingClientRect().top + window.scrollY - navHeight;
+  window.scrollTo({ top, behavior: 'smooth' });
 }
 
+function scrollToProjects() {
+  scrollToSection('projects');
+}
+
+function scrollToAbout() {
+  scrollToSection('about');
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const hash = window.location.hash.replace('#', '');
+  if (hash) {
+    setTimeout(function () { scrollToSection(hash); }, 100);
+  }
+});
+
 function goHome() {
-// Navigate back to the landing page (index.html)
-window.location.href = 'index.html';
+  window.location.href = 'index.html';
+}
+
+function toggleNav() {
+  document.querySelector('.navLinks').classList.add('nav-animating');
+  document.body.classList.toggle('nav-open');
+}
+
+function closeNav() {
+  document.body.classList.remove('nav-open');
 }
 
 function goCB() {
   // Navigate back to the landing page (index.html)
-  window.location.href = 'project-details2.html';
+  window.location.href = 'chatrbot-case-study.html';
   }
 
 function openDetailsPage(projectId) {
@@ -20,13 +48,13 @@ function openDetailsPage(projectId) {
   let projectDetailsFile = '';
 
   if (projectId === 1) {
-    projectDetailsFile = 'project-details1.html';
+    projectDetailsFile = 'oknotok-case-study.html';
   } else if (projectId === 2) {
-    projectDetailsFile = 'project-details2.html';
+    projectDetailsFile = 'chatrbot-case-study.html';
   } else if (projectId === 3) {
-    projectDetailsFile = 'project-details3.html';
+    projectDetailsFile = 'esr-case-study.html';
   } else if (projectId === 4) {
-    projectDetailsFile = 'project-details-occt.html';
+    projectDetailsFile = 'occt-case-study.html';
   } else {
     // Handle invalid project ID
     console.error('Invalid project ID');
@@ -37,39 +65,9 @@ function openDetailsPage(projectId) {
   window.open(projectDetailsFile, '_self');
 }
 
-// Typing animation on navbar 
-
-document.addEventListener("DOMContentLoaded", function() {
-  const sequence = ["Hi, I'm Anna", 1000];
-  const typingAnimationElement = document.getElementById('typing-animation');
-
-  function typeText(text, delay) {
-    let index = 0;
-
-    function type() {
-      if (index < text.length) {
-        typingAnimationElement.textContent += text.charAt(index);
-        index++;
-        setTimeout(type, delay / text.length);
-      }
-    }
-
-    type();
-  }
-
-  typeText(sequence[0], sequence[1]);
-
-  const hiAnnaElement = document.getElementById('typing-animation');
-
-  hiAnnaElement.addEventListener('click', function() {
-    window.location.href = './index.html';
-  });
-});
-
-
 // Open social links
 function openEmail() {
-  window.open('mailto:annaphoenixg@gmail.com');
+  window.open('mailto:annagombay1@gmail.com');
 }
 
 function openLinkedIn() {
