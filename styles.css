@@ -496,7 +496,7 @@ footer {
   font-family: "Figtree", sans-serif;
   color: #0077b6;
   font-weight: 500;
-  font-size: 2.25rem;
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
   letter-spacing: 0;
   line-height: 1;
   margin: 0 auto;
@@ -521,7 +521,7 @@ footer {
 .heroTitleRow h1 {
   display: block;
   margin-top: 0;
-  font-size: clamp(2rem, 5vw, 3.75rem);
+  font-size: clamp(2rem, 3rem, 3.75rem);
   text-wrap: balance;
 }
 .heroSubRow {
@@ -530,6 +530,7 @@ footer {
 }
 .row.heroSubRow h2 {
   margin-top: 0;
+  text-wrap: pretty;
 }
 .caseStudyDescription {
   font-family: 'Figtree', sans-serif;
@@ -627,8 +628,8 @@ li {
   line-height: 1rem;
 }
 .bulletList {
-  padding-left: 0;
-  list-style-position: inside;
+  padding-left: 1.25rem;
+  list-style-position: outside;
   margin: 0;
 }
 .mockup4 {
@@ -1029,15 +1030,12 @@ figcaption {
 /* Media Queries */
 
   @media (max-width: 1024px) {
-
-    /* @keyframes jiggle {
-    0%   { transform: rotate(0deg); }
-    20%  { transform: rotate(0deg); }
-    45%  { transform: rotate(0deg); }
-    65%  { transform: rotate(0deg); }
-    82%  { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
-  } */
+    .caseStudy {
+      padding-bottom: 2vh;
+    }
+    .noShow {
+      display: initial;
+    }
     .landingPage {
       flex-direction: column;
       align-items: center;
@@ -1045,7 +1043,6 @@ figcaption {
       height: auto;
       height: 89vh;
       padding: 0;
-      /* padding-top: 2vh; */
     }
     .heroImage {
       order: -1;
@@ -1197,9 +1194,9 @@ figcaption {
   }
 
     @media (max-width: 652px) {
-      .noShow {
-        display: inline;
-      }
+      /* .noShow {
+        display: initial;
+      } */
       .hamburger {
         display: flex;
         margin-left: auto;
@@ -1214,8 +1211,7 @@ figcaption {
         width: 100vw;
         height: fit-content;
         background: rgba(255, 255, 255, .6);
-        backdrop-filter: blur(2rem);
-        /* background-image: url(./images/nav-image.webp); */
+        backdrop-filter: blur(.2rem);
         background-position: center;
         background-size: cover;
         padding: 1rem 0;
@@ -1239,7 +1235,7 @@ figcaption {
         width: 90%;
         height: 4vh;
         text-align: center;
-        padding: 0.75rem 1rem;
+        padding: 1.5rem 1rem;
         background-image: url(./images/nav-image.webp);
         display: flex;
         align-items: center;
@@ -1423,11 +1419,6 @@ figcaption {
       }
       #web {
         display: none;
-      }
-      .row h1 {
-        font-size: 3.75rem;
-        letter-spacing: -0.02rem;
-        line-height: 1.1;
       }
       
     }
