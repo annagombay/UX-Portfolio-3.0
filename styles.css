@@ -7,7 +7,6 @@ body, html {
   background-image: url(./images/background-image.webp);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   text-wrap: pretty;
   font-optical-sizing: auto;
 }
