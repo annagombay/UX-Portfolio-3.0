@@ -1038,9 +1038,6 @@ figcaption {
     82%  { transform: rotate(0deg); }
     100% { transform: rotate(0deg); }
   } */
-   .noShow {
-      display: flex;
-    }
     .landingPage {
       flex-direction: column;
       align-items: center;
@@ -1200,6 +1197,9 @@ figcaption {
   }
 
     @media (max-width: 652px) {
+      .noShow {
+        display: inline;
+      }
       .hamburger {
         display: flex;
         margin-left: auto;
