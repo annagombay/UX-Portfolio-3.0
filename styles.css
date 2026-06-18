@@ -521,7 +521,7 @@ footer {
 .heroTitleRow h1 {
   display: block;
   margin-top: 0;
-  font-size: clamp(2rem, 3rem, 3.75rem);
+  font-size: clamp(1.5rem, 3rem, 3.75rem);
   text-wrap: balance;
 }
 .heroSubRow {
