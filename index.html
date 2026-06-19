@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    
     <!-- Icons: Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <!-- Animation: Rive on hero image -->
@@ -125,7 +124,7 @@
 
         </div>
         
-        <img src="./images/AnnaBio.png" alt="AnnaBio">
+        <img src="./images/AnnaBio2.png" alt="AnnaBio">
       
       </section>
 
@@ -147,47 +146,47 @@
       
     </main>
 
-<script>
-  const riveCanvas = document.getElementById("rive-canvas");
+    <script>
+      const riveCanvas = document.getElementById("rive-canvas");
 
-  function sizeCanvas() {
-    const container = riveCanvas.parentElement;
-    riveCanvas.style.width = container.clientWidth + "px";
-    riveCanvas.style.height = container.clientHeight + "px";
-  }
+      function sizeCanvas() {
+        const container = riveCanvas.parentElement;
+        riveCanvas.style.width = container.clientWidth + "px";
+        riveCanvas.style.height = container.clientHeight + "px";
+      }
 
-  // Set CSS dimensions before Rive initializes; resizeDrawingSurfaceToCanvas handles DPR internally
-  sizeCanvas();
+      // Set CSS dimensions before Rive initializes; resizeDrawingSurfaceToCanvas handles DPR internally
+      sizeCanvas();
 
-  const r = new rive.Rive({
-    src: "images/parting-of-the-sensory.riv",
-    canvas: riveCanvas,
-    autoplay: true,
-    animations: "Timeline 1",
-    layout: new rive.Layout({ fit: rive.Fit.Contain, alignment: rive.Alignment.Center }),
-    onLoad: () => {
-      r.resizeDrawingSurfaceToCanvas();
-    },
-    onLoop: () => {
-      r.pause();
-    }
-  });
+      const r = new rive.Rive({
+        src: "images/parting-of-the-sensory.riv",
+        canvas: riveCanvas,
+        autoplay: true,
+        animations: "Timeline 1",
+        layout: new rive.Layout({ fit: rive.Fit.Contain, alignment: rive.Alignment.Center }),
+        onLoad: () => {
+          r.resizeDrawingSurfaceToCanvas();
+        },
+        onLoop: () => {
+          r.pause();
+        }
+      });
 
-  window.addEventListener("resize", () => {
-    sizeCanvas();
-    r.resizeDrawingSurfaceToCanvas();
-  });
+      window.addEventListener("resize", () => {
+        sizeCanvas();
+        r.resizeDrawingSurfaceToCanvas();
+      });
 
-  // Re-render at higher resolution when browser zoom changes devicePixelRatio
-  let lastDpr = window.devicePixelRatio;
-  window.matchMedia(`(resolution: ${lastDpr}dppx)`).addEventListener("change", function onDprChange() {
-    sizeCanvas();
-    r.resizeDrawingSurfaceToCanvas();
-    lastDpr = window.devicePixelRatio;
-    window.matchMedia(`(resolution: ${lastDpr}dppx)`).addEventListener("change", onDprChange, { once: true });
-  }, { once: true });
+      // Re-render at higher resolution when browser zoom changes devicePixelRatio
+      let lastDpr = window.devicePixelRatio;
+      window.matchMedia(`(resolution: ${lastDpr}dppx)`).addEventListener("change", function onDprChange() {
+        sizeCanvas();
+        r.resizeDrawingSurfaceToCanvas();
+        lastDpr = window.devicePixelRatio;
+        window.matchMedia(`(resolution: ${lastDpr}dppx)`).addEventListener("change", onDprChange, { once: true });
+      }, { once: true });
 
-</script>
+    </script>
     
   </body>
 </html>

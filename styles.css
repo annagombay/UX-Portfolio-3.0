@@ -463,14 +463,6 @@ footer {
 #leftHome {
   display: none;
 }
-.topBkg {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  margin-top: -6vh;
-  position: absolute;
-}
 .row {
   display: flex;
   flex-direction: row;
@@ -1383,9 +1375,6 @@ figcaption {
         /* height: fit-content; */
         padding-top: 3.2vw;
         padding-bottom: 3.2vw;
-      }
-      .topBkg {
-        background-image: url(./images/top-bkg-mob.webp);
       }
       .signature {
         width: 34vw;
